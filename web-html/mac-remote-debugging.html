@@ -1,0 +1,20 @@
+
+<h2><span class="mw-headline" id=".E9.80.9A.E8.BF.87Mac.E8.BF.9C.E7.A8.8B.E8.B0.83.E8.AF.95iPhone.2FiPad.E4.B8.8A.E7.9A.84.E7.BD.91.E9.A1.B5">通过Mac远程调试iPhone/iPad上的网页</span></h2>
+<p>　iOS 6 给 Safari 增加了远程的 Web 检查器工具(Remote Web Inspector)，你可以通过模拟器或者真实的设备(通过 USB 连上 Mac)进行调试。下面讲讲详细的调试过程：
+</p><p>1. 要进行远程调试，首先要打开开启 iPhone/iPad 上的 Safari 的远程调试功能，“通过 设置 &gt; Safari &gt; 高级”开启： 
+</p><p><br>                
+<img src="web-html-img/image103.png" alt="image103.png">
+</p><p><br>
+2. 然后打开 Safari，开启你要调试的网页，当然原生应用中通过 WebView 开启的网页也是可以调试的。 
+</p><p>3. 最后把 iPhone 或者 iPad 通过数据线连上 Mac 电脑，打开桌面版的 Safari(目前 iOS 6 的 Safari 远程调试只支持通过 Mac 上的桌面版的 Safari 进行，Safari for Windows 目前还没有此项功能)，点击开发菜单，选择你调试的 iPhone/iPad 的设备名，选择调试的网页。 
+</p><p><br>                
+<img src="web-html-img/image104.png" alt="image104.png">
+</p><p><br>
+4. 最后就是调用桌面版的 Safari 的 Web 检查器对 iPhone/iPad 上的 Safari 应用进行调试：
+</p><p><br>                
+<img src="web-html-img/image105.png" alt="image105.png">
+</p><p><br>
+这个调试过程和我们平常在 Mac/PC 上调试基本一样，比如可以对 HTML 和 CSS 做些实时的改动，查看修改后的效果。查看 cookie，本地存储，session 等一些数据。查看 WebApp 的性能，网络请求等，也可以查看所有错误和警告信息对程序进行修正。
+</p><p>当然我们可以通过它来调试 Javascript，设置断点，定义未捕获的意外等。也可以访问 Console，直接执行 Javascript 代码。
+</p><p>另外它还支持触摸检查(Touch to inspect)：激活检查器上的手型图标，就可以通过在 iPhone/iPad 上触摸，就能立即找到检查器对应的 DOM 元素。
+</p>

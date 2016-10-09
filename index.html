@@ -2,18 +2,225 @@
 <html>
 <head lang="en">
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
-    <!-- 删除苹果默认的工具栏和菜单栏 -->
-    <meta name="apple-mobile-web-app-capable" content="yes"/>
-    <!-- 设置苹果工具栏颜色 -->
-    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
-    <!-- 忽略页面中的数字识别为电话 -->
-    <meta name="format-detection" content="telephone=no"/>
-    <meta name="author" content="weibin.zeng@180china.com">
-    <title>测试</title>
+    <!--<meta content="width=device-width, initial-scale=1" name="viewport"/>-->
+    <title>个人项目集</title>
+
+    <script src="libs/jquery/jquery-1.11.2.js"></script>
+
+    <link rel="stylesheet" href="libs/bootstrap-3.3.5-dist/css/bootstrap.css"/>
+    <!--<script src="libs/bootstrap-3.3.5-dist/js/bootstrap.js"></script>-->
+
+    <!--<link rel="stylesheet" href="css/appStyle.css"/>-->
+    <!--<link rel="stylesheet" href="css/app.css"/>-->
+
+
+    <link rel="stylesheet/less" type="text/css" href="css/app.less">
+    <script src="libs/less/less.min.js" type="text/javascript"></script>
+
+    <!--<script src="http://tjs.sjs.sinajs.cn/open/api/js/wb.js?appkey=2534775202" type="text/javascript" charset="utf-8"></script>-->
 </head>
 <body>
-    <img src="imgs/zengbin/tuniu/TUNIU.jpg" alt=""/>
-    <p>测试文本</p>
+    <header class="header"></header>
+    <nav>
+        <div class="container">
+            <!-- Single button -->
+            <div class="nav-group">
+                <button type="button" class="btn btn-danger">
+                    <span class="glyphicon glyphicon-send" aria-hidden="true"></span> 项目集
+                </button>
+                <button type="button" class="btn btn-warning">
+                    <span class="glyphicon glyphicon-edit" aria-hidden="true"></span> 前端规范
+                </button>
+                <!--<button type="button" class="btn btn-info">-->
+                    <!--<span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span> 论坛-->
+                <!--</button>-->
+                <!--<button type="button" class="btn btn-success">-->
+                    <!--<span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span> 提问社区-->
+                <!--</button>-->
+               <!-- <button type="button" class="btn" style="float: right;margin-right:0;">
+                    <wb:login-button type="3,2" onlogin="login" onlogout="logout">登录按钮</wb:login-button>
+                </button>-->
+                <!--<div class="btn-group">
+                    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        58到家<span class= "caret"></span>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        &lt;!&ndash;<li role="separator" class="divider"></li>&ndash;&gt;
+                        <li><a href="#">Separated link</a></li>
+                    </ul>
+                </div>-->
+
+            </div>
+        </div>
+    </nav>
+    <div class="view">
+
+        <!--项目集-->
+        <div class="container">
+            <ul class="row show-case" id="projectView">
+                <!--<div class="col-xs-3">
+                    <article class="post tag-guo-wai-wang-zhan tag-bootstrap-v3">
+                        <h2 class="post-title text-center">
+                            京东朋友圈
+                        </h2>
+                        <div class="post-featured-image">
+                            <a class="thumbnail" target="_self" href="#">
+                                <img width="100%" alt="Blocs" src="imgs/01/case01.jpg"/>
+                            </a>
+                        </div>
+                        <div class="post-featured-image">
+                            <a class="thumbnail" target="_self" href="#" style="width:60%;margin:0 auto;">
+                                <img width="100%" alt="Blocs" src="imgs/01/case01_code.jpg"/>
+                            </a>
+                        </div>
+                    </article>
+                </div>-->
+            </ul>
+        </div>
+
+
+
+
+
+
+        <div class="container" id="web-standard">
+            <div class="clearfix">
+                <ul class="menu">
+                    <li class="menu-item">
+                        <h3 class="menu-title"><span class="icon-menu">&nbsp;</span>HTML</h3>
+                        <ul class="menu-list">
+                            <!--<li class="menu-sub-item"><a href="mdesign-guide.htm" class="menu-sub-link">HTML编程规范</a></li>-->
+                            <li><a href="file/微信H5尺寸.psd">微信H5尺寸规范psd</a></li>
+                            <li><a href="file/psdFileStandard.ppt">H5 psd文件规范</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item">
+                        <h3 class="menu-title"><span class="icon-menu">&nbsp;</span>CSS</h3>
+                        <ul class="menu-list">
+                            <li class="menu-sub-item bg-gray" data-iframeurl="web-html/css-optimize.html">css编程规范</li>
+                        </ul>
+                    </li>
+                    <li class="menu-item">
+                        <h3 class="menu-title"><span class="icon-menu">&nbsp;</span>JavaScript</h3>
+                        <ul class="menu-list">
+                            <li class="menu-sub-item" data-iframeurl="web-html/mbugs.html">移动页面排坑BUG汇总</li>
+                        </ul>
+                    </li>
+                    <li class="menu-item">
+                        <h3 class="menu-title"><span class="icon-menu">&nbsp;</span>测试环境</h3>
+                        <ul class="menu-list">
+                            <li class="menu-sub-item" data-iframeurl="web-html/mac-remote-debugging.html">Mac远程调试</li>
+                        </ul>
+                    </li>
+
+                </ul>
+                <div>
+                    <iframe id="ifram" src="web-html/css-optimize.html" frameborder="0" width="1000" height="1000"></iframe>
+                </div>
+            </div>
+            <!--<a href="http://tguide.qq.com/mobile.htm" target="_blank">移动页面设计规范</a>-->
+
+        </div>
+        <div class="container" id="qc">
+            <!--<div class="question-item">
+                <div class="user-info">
+                    <span>色即是空</span>
+                    <span>2015/07/28</span>
+                    <span>11:41</span>
+                </div>
+                <div class="question">
+                    <h2>为什么人类长大后却丧失了根据听到的语言来学习语言的能力？</h2>
+                </div>
+                <div class="answer">
+                    <i class="up_triangle_blue"></i>
+                    <i class="up_triangle_blue2"></i>
+
+                    <div class="comment">
+                        <!--<a class="addComment">添加评论</a>
+                        <div class="answer_from" contenteditable="true"></div>
+                        <a class="answerBtn">评论</a>
+                    </div>
+
+                    <div class="answer_item_group">
+                        <div class="answer_item">
+                            <span>2015/07/28</span>
+                            <span>11:41</span>
+                            <p>我擦，心理语言学苦逼博士在读生提供一个细节不同但大体呼应其他回答的观点吧。很多情况下，学习不是由于脑细胞增加，而是联结的减少。婴儿的脑中神经联结的数量其实远多于成人（手机码的，报歉暂不提供引用），当然不同脑区之间发展轨道有差异。听觉区的突触数量出生后基本在下降最后稳定…</p>
+                        </div>
+                        <div class="answer_item">
+                            <span>2015/07/28</span>
+                            <span>11:41</span>
+                            <p>我擦，心理语言学</p>
+                        </div>
+                    </div>
+                </div>
+            </div>-->
+        </div>
+        <div class="container">
+            <div class="askQuestionsView">
+                <form class="form-horizontal" id="questionform">
+                    <div class="form-group">
+                        <label for="questioner" class="col-sm-2 control-label">姓名:</label>
+                        <div class="col-sm-4" style="padding:0px;">
+                            <input type="text" class="form-control" id="questioner" placeholder="请输入你的名字" name="questioner">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">问题描述:</label>
+                        <div class="col-sm-8 questionDescribeView">
+                            <div class="questionDescribe-title">
+                                <div class="icon-view">
+                                    <i title="表情" class="qst-icon expression-icon"></i>
+                                    <div class="expression-view">
+                                        <i class="arrow-down"></i>
+                                        <i class="arrow-up"></i>
+                                        
+                                        <!--<div class="radio-view">
+                                            <label for="tsj">兔斯基</label>
+                                            <input type="radio" id="tsj" name="gifgroup" checked/>
+                                            <div class="gifview">
+                                                <img src="imgs/tsj/j_0001.gif" alt=""/>
+                                                <img src="imgs/tsj/j_0005.gif" alt=""/>
+                                                <img src="imgs/tsj/j_0008.gif" alt=""/>
+                                            </div>
+                                        </div>
+                                        <div class="radio-view">
+                                            <label for="ldw">绿豆蛙</label>
+                                            <input type="radio" id="ldw" name="gifgroup"/>
+                                            <div class="gifview ldw">
+                                                <img src="imgs/ldw/j_0015.gif" alt=""/>
+                                                <img src="imgs/ldw/j_0016.gif" alt=""/>
+                                                <img src="imgs/ldw/j_0017.gif" alt=""/>
+                                                <img src="imgs/ldw/j_0018.gif" alt=""/>
+                                            </div>
+                                        </div>-->
+                                    </div>
+                                </div>
+                                <div class="icon-view">
+                                    <i title="超链接" class="qst-icon hyperlinks"></i>
+                                </div>
+                            </div>
+
+
+                            <textarea id="questionDescribed" rows="3" name="questionDescribed" placeholder="请输入问题" style="/*max-width:290px;max-height:200px;*/"></textarea>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-2 col-sm-offset-2">
+                            <a class="btn btn-primary" id="postQuestions">发布</a>
+                            <a class="btn">取消</a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <footer style="height: 50px;"></footer>
 </body>
 </html>
+<html xmlns:wb="http://open.weibo.com/wb">
+<!--<script src="js/model/Question.js"></script>-->
+<script src="js/controller/main.js"></script>
