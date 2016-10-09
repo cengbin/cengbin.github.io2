@@ -34,27 +34,27 @@ $(function(){
                 var item_codeimg_alt= projectArr[i]["alt"];
 
                 var item_title=projectArr[i]["projectName"];
-                var itme_describe=projectArr[i]["describe"];
+                var item_describe=projectArr[i]["describe"];
 
                 var item="<li class='col-xs-3'>" +
-                            "<a class='item-view' href='"+_href+"' target='_blank'>"+
-                                "<div class='item-head'>"+
-                                    "<img class='item-img' src='"+item_img_url+"' alt='"+item_img_alt+"'/>"+
-                                    "<div class='item-mask'>"+
-                                        "<img class='item-codeimg' src='"+item_codeimg_url+"' alt='"+item_codeimg_alt+"'/>"+
+                            "<div class='item-view'>"+
+                                "<a href='"+_href+"' target='_blank'>"+
+                                    "<div class='item-head'>"+
+                                        "<img class='item-img' src='"+item_img_url+"' alt='"+item_img_alt+"'/>"+
+                                        "<div class='item-mask'>"+
+                                            "<img class='item-codeimg' src='"+item_codeimg_url+"' alt='"+item_codeimg_alt+"'/>"+
+                                        "</div>"+
                                     "</div>"+
-                                "</div>"+
-                                "<div class='item-title'>"+
-                                    item_title+
-                                "</div>"+
-                                "<div class='item-desc'>"+
-                                    itme_describe
-                                "</div>"+
-                            "</a>"+
+                                    "<div class='item-title'>"+item_title+"</div>"+
+                                "</a>"+
+                                "<div class='item-desc'>"+item_describe+"</div>"+
+                            "</div>"+
                         "</li>";
 
-                $("#projectView").append(item);
                 console.log(item);
+
+                $("#projectView").append(item);
+                //console.log(item);
             }
         },
         error:function(error){
