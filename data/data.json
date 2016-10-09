@@ -9,7 +9,8 @@
 
     {"projectName":"劳斯莱斯《黑色精神1》",         "link":"http://h5.180network.com.cn/RollsRoyce1/","img":"imgs/zengbin/lsls1/lsls1.png",
      "code_img":"imgs/zengbin/lsls1/lsls1-code.png","alt":"","describe":"canvas + pixi.js"},
-    {"projectName":"劳斯莱斯《黑色精神2》",         "link": "http://h5.180network.com.cn/Chess4/","img":"imgs/zengbin/lsls2/lsls2.png","code_img":"imgs/zengbin/lsls2/lsls2-code.png","alt":"" ,"describe":"劳斯莱斯"},
+    {"projectName":"劳斯莱斯《黑色精神2》",         "link": "http://h5.180network.com.cn/Chess4/","img":"imgs/zengbin/lsls2/lsls2.png",
+     "code_img":"imgs/zengbin/lsls2/lsls2-code.png","alt":"" ,"describe":"劳斯莱斯<br/>THML + CSS + pixi.js + three.js"},
 
 
     {"projectName":"寺库《4S店内幕知多少》",    "link":"http://h5.180network.com.cn/sk_s2/","img":"imgs/zengbin/sk/sk.jpg","code_img":"imgs/zengbin/sk/sk_code.png","alt":"","describe":""},
