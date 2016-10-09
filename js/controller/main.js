@@ -16,7 +16,7 @@ $(function(){
     });
     //添加 项目集
     $.ajax({
-        url:'data/data.json',
+        url:'data/data2.json',
         dataType:"json",
         type:"get",
         success:function(data){
