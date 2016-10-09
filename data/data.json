@@ -2,7 +2,7 @@
     {"projectName":"优信《小鸟爱飞翔》",         "link":"http://h5.180network.com.cn/2016/yx/","img":"imgs/zengbin/youxin/yx.PNG",
      "code_img":"imgs/zengbin/youxin/yx-code.png","alt":"" ,"describe":"canvas + creatJS"},
     {"projectName":"BMW《十万光年自由行》",      "link":"http://cdn.180network.com.cn/2016/bmwx1/","img":"imgs/zengbin/bmw/bmw.jpg",
-     "code_img":"imgs/zengbin/bmw/bmw-code.png","alt":"" ,"describe":"HTML + CSS + canvas + creatJS<br/><a href='http://tgideas.qq.com/webplat/info/news_version3/804/808/811/m579/201409/278736.shtml'>H5拍照应用开发经历的那些坑儿</a>"},
+     "code_img":"imgs/zengbin/bmw/bmw-code.png","alt":"" ,"describe":"HTML + CSS + canvas + creatJS<br/><a  href='http://tgideas.qq.com/webplat/info/news_version3/804/808/811/m579/201409/278736.shtml'>H5拍照应用开发经历的那些坑儿</a>"},
     {"projectName":"华为《中国古代潮流怀神史》",   "link":"http://h5.180network.com.cn/2016/HWB3/","img":"imgs/zengbin/hw-b3/hw-b3.png",
      "code_img":"imgs/zengbin/hw-b3/hw-b3-code.png","alt":"" ,"describe":"canvas + Egret"},
 
