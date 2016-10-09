@@ -1,26 +1,35 @@
 [
+    {"projectName":"优信《小鸟爱飞翔》",         "link":"http://h5.180network.com.cn/2016/yx/","img":"imgs/zengbin/youxin/yx.PNG",
+     "code_img":"imgs/zengbin/youxin/yx-code.png","alt":"" ,"describe":"canvas + creatJS"},
+    {"projectName":"BMW《十万光年自由行》",      "link":"http://cdn.180network.com.cn/2016/bmwx1/","img":"imgs/zengbin/bmw/bmw.jpg",
+     "code_img":"imgs/zengbin/bmw/bmw-code.png","alt":"" ,"describe":"HTML + CSS + canvas + creatJS"},
+    {"projectName":"华为《中国古代潮流怀神史》",   "link":"http://h5.180network.com.cn/2016/HWB3/","img":"imgs/zengbin/hw-b3/hw-b3.png",
+     "code_img":"imgs/zengbin/hw-b3/hw-b3-code.png","alt":"" ,"describe":"canvas + Egret"},
 
-    {"projectName":"宝马《十万光年自由行》",      "link":"http://cdn.180network.com.cn/2016/bmwx1/","img":"imgs/zengbin/bmw/bmw.jpg","code_img":"imgs/zengbin/bmw/bmw-code.png","alt":"" ,"describe":""},
-    {"projectName":"优信《小鸟爱飞翔》",         "link":"http://h5.180network.com.cn/2016/yx/","img":"imgs/zengbin/youxin/yx.PNG","code_img":"imgs/zengbin/youxin/yx-code.png","alt":"" ,"describe":""},
-    {"projectName":"爱奇艺《极限男人帮》",        "link":"http://h5.180network.com.cn/iqiyi/","img":"imgs/zengbin/iqiyi/iqiyi.jpg","code_img":"imgs/zengbin/iqiyi/iqiyi_code.png","alt":"","describe":""},
+
+    {"projectName":"劳斯莱斯《黑色精神1》",         "link":"http://h5.180network.com.cn/RollsRoyce1/","img":"imgs/zengbin/lsls1/lsls1.png",
+     "code_img":"imgs/zengbin/lsls1/lsls1-code.png","alt":"","describe":"canvas + pixi.js"},
+    {"projectName":"劳斯莱斯《黑色精神2》",         "link": "http://h5.180network.com.cn/Chess4/","img":"imgs/zengbin/lsls2/lsls2.png","code_img":"imgs/zengbin/lsls2/lsls2-code.png","alt":"" ,"describe":"劳斯莱斯"},
+
+
     {"projectName":"寺库《4S店内幕知多少》",    "link":"http://h5.180network.com.cn/sk_s2/","img":"imgs/zengbin/sk/sk.jpg","code_img":"imgs/zengbin/sk/sk_code.png","alt":"","describe":""},
-
+    {"projectName":"180《180抽奖3D》",        "link":"http://h5.180network.com.cn/tydemo/icon/","img":"imgs/ty/180Lucky/180Lucky.jpg","code_img":"imgs/ty/180Lucky/180Lucky-code.png","alt":"","describe":""},
     {"projectName":"腾讯《春节怪物饭局》",         "link":"http://h5.180network.com.cn/txgame_jsdemo/",      "img":"imgs/liuyang/tx.jpg",         "code_img":"imgs/liuyang/tx.png",       "alt":"","describe":""},
+
+    {"projectName":"爱奇艺《极限男人帮》",        "link":"http://h5.180network.com.cn/iqiyi/","img":"imgs/zengbin/iqiyi/iqiyi.jpg","code_img":"imgs/zengbin/iqiyi/iqiyi_code.png","alt":"","describe":""},
     {"projectName":"intel《开脑站1》",          "link":"http://h5.180network.com.cn/intel/a/","img":"imgs/zengbin/intelA/intelA.jpg","code_img":"imgs/zengbin/intelA/intelA_code.png","alt":"","describe":""},
     {"projectName":"intel《开脑站2》",          "link":"http://h5.180network.com.cn/intel/b/","img":"imgs/zengbin/intelB/intelB.jpg","code_img":"imgs/zengbin/intelB/intelB_code.png","alt":"","describe":""},
     {"projectName":"intel《开脑站3》",          "link":"http://h5.180network.com.cn/intel/c/","img":"imgs/zengbin/intelC/intelC.jpg","code_img":"imgs/zengbin/intelC/intelC_code.png","alt":"","describe":""},
-
     {"projectName":"途牛《10.17朋友圈推广》",       "link":"http://h5.180network.com.cn/tuniu/html/","img":"imgs/zengbin/tuniu/TUNIU.jpg","code_img":"imgs/zengbin/tuniu/tuniu_code.png","alt":"","describe":""},
     {"projectName":"滴滴《滴滴长图》",         "link":"http://static.udache.com/gulfstream/webapp/modules/guinness/index.html","img":"imgs/zengbin/01/case01.jpg","code_img":"imgs/zengbin/01/case01_code.jpg","alt":"","describe":""},
-    {"projectName":"蜜淘《蜜桃推到她》",       "link":"http://h5.180network.com.cn/tuidao/","img":"imgs/zengbin/tuidao/tuidao.jpg","code_img":"imgs/zengbin/tuidao/tuidao.png","alt":"","describe":""},
-
-
     {"projectName":"华为《mate7朋友圈推广》",   "link":"http://h5.180network.com.cn/hw-rongyao/","img":"imgs/zengbin/06/case06.jpg","code_img":"imgs/zengbin/06/case06_code.jpg","alt":"","describe":""},
     {"projectName":"京东《十二年朋友圈推广》",  "link":"http://h5.180network.com.cn/jd12year/","img":"imgs/zengbin/02/case02.jpg","code_img":"imgs/zengbin/02/case02_code.jpg","alt":"","describe":""},
     {"projectName":"京东《6.18朋友圈推广》","link":"http://h5.180network.com.cn/partyon618/","img":"imgs/zengbin/05/case05.jpg","code_img":"imgs/zengbin/05/case05_code.jpg","alt":"","describe":""},
+    {"projectName":"蜜淘《蜜桃推到她》",       "link":"http://h5.180network.com.cn/tuidao/","img":"imgs/zengbin/tuidao/tuidao.jpg","code_img":"imgs/zengbin/tuidao/tuidao.png","alt":"","describe":""},
+    {"projectName":"京东《新年心愿单》",       "link":"http://h5.180network.com.cn/jd-yd/","img":"imgs/zengbin/jd-yuandan/jd_yd.jpg","code_img":"imgs/zengbin/jd-yuandan/jd_yd_code.png","alt":"","describe":""},
     {"projectName":"58到家《58懒人节》",          "link":" http://h5.180network.com.cn/58/","img":"imgs/zengbin/07/case07.jpg","code_img":"imgs/zengbin/07/case07_code.jpg","alt":"","describe":""},
-    {"projectName":"劳斯莱斯《黑色精神1》",         "link":"http://h5.180network.com.cn/RollsRoyce1/","img":"imgs/zengbin/lsls1/lsls1.png","code_img":"imgs/zengbin/lsls1/lsls1-code.png","alt":"","describe":""},
-    {"projectName":"劳斯莱斯《黑色精神2》",         "link": "http://h5.180network.com.cn/Chess4/","img":"imgs/zengbin/lsls2/lsls2.png","code_img":"imgs/zengbin/lsls2/lsls2-code.png","alt":"" ,"describe":"劳斯莱斯"},
+    {"projectName":"京东《618大趴明星群》","link":"http://h5.180network.com.cn/jd618hb/","img":"imgs/zengbin/09/case09.jpg","code_img":"imgs/zengbin/09/case09_code.jpg","alt":"","describe":""},
 
+    {"projectName":"京东《618手机大趴》",  "link":"","img":"imgs/zengbin/10/case10.jpg","code_img":"imgs/zengbin/10/case10_code.jpg","alt":"","describe":""},
     {"projectName":"京东《全民寻找618》",  "link":"","img":"imgs/zengbin/08/case08.jpg","code_img":"imgs/zengbin/08/case08_code.jpg","alt":"","describe":""}
 ]
