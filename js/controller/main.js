@@ -5,6 +5,17 @@
 var IP="http://115.159.43.254:8085/";
 $(function(){
 
+    var cobweb=new Cobweb().init();
+
+    function animate(){
+        requestAnimationFrame(animate);
+
+        cobweb.update();
+    }
+    animate();
+
+
+
     $(".nav-group .btn").click(function(){$(".view .container").hide().eq($(this).index()).show();});
     $($(".nav-group .btn")[0]).trigger("click");
 
@@ -51,7 +62,7 @@ $(function(){
                             "</div>"+
                         "</li>";
 
-                console.log(item);
+                //console.log(item);
 
                 $("#projectView").append(item);
                 //console.log(item);
