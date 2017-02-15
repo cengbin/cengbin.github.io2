@@ -23,9 +23,9 @@
 
     {"projectName":"寺库《4S店内幕知多少》",    "link":"http://h5.180network.com.cn/sk_s2/","img":"imgs/zengbin/sk/sk.jpg",
      "code_img":"imgs/zengbin/sk/sk_code.png","alt":"","describe":"canvas + creatJS + Flash"},
-    {"projectName":"180《180抽奖3D》",        "link":"http://h5.180network.com.cn/tydemo/icon/","img":"imgs/ty/180Lucky/180Lucky.jpg",
+    {"projectName":"180《180抽奖3D》",        "link":"http://h5.180network.com.cn/ZBdemo/icon/","img":"imgs/ty/180Lucky/180Lucky.jpg",
      "code_img":"imgs/ty/180Lucky/180Lucky-code.png","alt":"","describe":"canvas + three.js"},
-    {"projectName":"腾讯《春节怪物饭局》",         "link":"http://h5.180network.com.cn/txgame_jsdemo/",      "img":"imgs/liuyang/tx.jpg",         "code_img":"imgs/liuyang/tx.png",       "alt":"","describe":""},
+    {"projectName":"腾讯《春节怪物饭局》",         "link":"http://h5.180network.com.cn/txgame_jsdemo/",      "img":"imgs/liuyang/tx.jpg",         "code_img":"imgs/liuyang/tx.png",       "alt":"","describe":"canvas + Three.js"},
 
     {"projectName":"爱奇艺《极限男人帮》",        "link":"http://h5.180network.com.cn/iqiyi/","img":"imgs/zengbin/iqiyi/iqiyi.jpg","code_img":"imgs/zengbin/iqiyi/iqiyi_code.png","alt":"","describe":""},
     {"projectName":"intel《开脑站1》",          "link":"http://h5.180network.com.cn/intel/a/","img":"imgs/zengbin/intelA/intelA.jpg","code_img":"imgs/zengbin/intelA/intelA_code.png","alt":"","describe":""},
