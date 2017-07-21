@@ -59,7 +59,7 @@ img{
 }
 
 
-.top-layer{
+.page{
   position:relative;
   z-index:1;
 }
@@ -70,13 +70,12 @@ img{
 
 
 .container {
-  width: 1200px;
+  //width: 1200px;
   max-width: none !important;
   padding-right: 0px;
   padding-left: 0px;
 }
 .header {
-  min-width: 1200px;
   //min-height:300px;
   width: 100%;
   color: @header-color;
@@ -85,16 +84,15 @@ img{
   .box-shadow(2px,5px);*/
   background-repeat: no-repeat;
   background-position: center 0;
-  background-size: cover;
+  background-size: contain;
   padding: 25% 0 0;
   text-align: center;
   position: relative;
   background-color:@header-bg-color;
-  background-image: url('../imgs/banner.jpg');
-  background-position-y: -200px;
+  background-image: url('../imgs/banner3.jpg');
+  background-position-y: 0px;
 }
 nav{
-  min-width:1200px;
   width:100%;
   background: #0666c5;
   background-color: #0767c8;
@@ -208,9 +206,10 @@ nav{
           position:absolute;
           top:50%;
           left:50%;
-          width:200px;
-          height:200px;
-          margin:-100px 0 0 -100px;
+          width:80%;
+          height:auto;
+          transform:translate(-50%,-50%);
+          -webkit-transform:translate(-50%,-50%);
         }
       }
     }

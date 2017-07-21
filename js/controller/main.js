@@ -15,16 +15,6 @@ $(function(){
     animate();
 
 
-
-    $(".nav-group .btn").click(function(){$(".view .container").hide().eq($(this).index()).show();});
-    $($(".nav-group .btn")[0]).trigger("click");
-
-
-    $(".menu-list .menu-sub-item").click(function(){
-        $(".bg-gray").removeClass("bg-gray");
-        $(this).addClass("bg-gray")
-        $("#ifram").attr("src",$(this).data("iframeurl"));
-    });
     //添加 项目集
     $.ajax({
         url:'data/data.json',
