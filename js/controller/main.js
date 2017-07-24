@@ -33,6 +33,7 @@ $(function(){
 
                 var item_codeimg_url=projectArr[i]["code_img"];
                 var item_codeimg_alt= projectArr[i]["alt"];
+                var mask_ele=item_codeimg_url?("<div class='item-mask'><img class='item-codeimg' src='"+item_codeimg_url+"' alt='"+item_codeimg_alt+"'/></div>"):'';
 
                 var item_title=projectArr[i]["projectName"];
                 var item_describe=projectArr[i]["describe"];
@@ -41,10 +42,7 @@ $(function(){
                             "<div class='item-view'>"+
                                 "<a href='"+_href+"' target='_blank'>"+
                                     "<div class='item-head'>"+
-                                        "<img class='item-img' src='"+item_img_url+"' alt='"+item_img_alt+"'/>"+
-                                        "<div class='item-mask'>"+
-                                            "<img class='item-codeimg' src='"+item_codeimg_url+"' alt='"+item_codeimg_alt+"'/>"+
-                                        "</div>"+
+                                        "<img class='item-img' src='"+item_img_url+"' alt='"+item_img_alt+"'/>"+mask_ele+
                                     "</div>"+
                                     "<div class='item-title'>"+item_title+"</div>"+
                                 "</a>"+
