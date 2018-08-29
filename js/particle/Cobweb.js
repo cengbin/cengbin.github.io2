@@ -5,6 +5,7 @@
 function Cobweb(){
     var windowWidth=document.documentElement.clientWidth;
     var windowHeight=document.documentElement.clientHeight;
+    var scale=(windowWidth/1200)>1?1:(windowWidth/1200);
 
     var canvas=document.createElement("canvas");
     document.body.appendChild(canvas);
@@ -18,14 +19,12 @@ function Cobweb(){
 
     var ctx=canvas.getContext("2d");
 
-    var pn=0,
+    var pn=50*scale,
         particles=[],
-        minDistance=150,
+        minDistance=150*scale,
         maxDistance=minDistance*2;
 
     this.init=function(){
-
-        pn=50;
 
         for(var i=0;i<pn;i++){
             particles.push({
