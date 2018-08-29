@@ -28,8 +28,8 @@ $(function () {
           ? projectArr[i]["link"]
           : "javascript:void(0);";
 
-        var img_url = "img/pro/" + name + "_" + time + ".jpg";
-        var codeimg_url = "img/pro/" + name + "_" + time + "_code.png";
+        var img_url = "http://h5n.180china.com/game/pro/" + name + "_" + time + ".jpg";
+        var codeimg_url = "http://h5n.180china.com/game/pro/" + name + "_" + time + "_code.png";
         var mask_ele = (projectArr[i]["code"] === 0)
           ? ""
           : ("<div class='item-mask'><img class='item-codeimg' src='" + codeimg_url + "' alt=''/></div>");
