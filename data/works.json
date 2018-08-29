@@ -1,12 +1,12 @@
 [
   {"name":"porsche","brand":"保时捷","pro_name":"保时捷产品精华应用(app store搜索)","time":"2017.2.4","desc":"webpack项目管理 + vue + es6 + Hbuilder打包","code":0,"link":"https://itunes.apple.com/us/app/%E4%BF%9D%E6%97%B6%E6%8D%B7%E4%BA%A7%E5%93%81%E7%B2%BE%E5%8D%8E/id1242751142?l=zh&ls=1&mt=8"},
 
-  {"name":"longhash","brand":"longhash","pro_name":"LongHash官网","time":"2018.4.1","desc":"NodeJS + Vue.js","code":0,"link":"https://www.longhash.com/"},
+  {"name":"longhash","brand":"longhash","pro_name":"LongHash官网","time":"2018.4.1","desc":"NodeJS + Vue.js + D3.js","code":0,"link":"https://www.longhash.com/"},
 
-  {"name":"180","brand":"180","pro_name":"老虎机摇奖","time":"2018.4.1","desc":"canvas + egret","link":"http://h5n.180china.com/game/game1/index.html"},
-  {"name":"180","brand":"180","pro_name":"抽奖大转盘","time":"2018.4.2","desc":"canvas + egret","link":"http://h5n.180china.com/game/game2/index.html"},
-  {"name":"180","brand":"180","pro_name":"砸蛋抽大奖","time":"2018.4.3","desc":"canvas + egret","link":"http://h5n.180china.com/game/game3/index.html"},
-  {"name":"180","brand":"180","pro_name":"扯红包","time":"2018.4.4","desc":"canvas + egret"},
+  {"name":"180","brand":"180","pro_name":"老虎机摇奖","time":"2018.4.1","desc":"canvas + egret + TypeScript","link":"http://h5n.180china.com/game/game1/index.html"},
+  {"name":"180","brand":"180","pro_name":"抽奖大转盘","time":"2018.4.2","desc":"canvas + egret + TypeScript","link":"http://h5n.180china.com/game/game2/index.html"},
+  {"name":"180","brand":"180","pro_name":"砸蛋抽大奖","time":"2018.4.3","desc":"canvas + egret + TypeScript","link":"http://h5n.180china.com/game/game3/index.html"},
+  {"name":"180","brand":"180","pro_name":"扯红包","time":"2018.4.4","desc":"canvas + egret + TypeScript"},
 
   {"name":"RR","brand":"劳斯莱斯","pro_name":"想象之印记","time":"2017.2.2","desc":"canvas + egret"},
   {"name":"RR","brand":"劳斯莱斯","pro_name":"持恒为之完美","time":"2017.2.3","desc":"canvas + egret"},
