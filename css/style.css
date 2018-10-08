@@ -254,16 +254,22 @@ body {
           padding: 0 16px 30px;
           background-color: white;
           text-shadow: 0 0 10px rgba(255, 0, 0, 0.35); }
-  .page .nav-about {
+  .page .fixed-view {
     position: fixed;
     right: 2em;
     bottom: 1em;
-    font-size: 12px;
-    color: #275b8c;
-    border: 1px solid #275b8c;
-    border-radius: .5em;
-    line-height: 1.8;
-    padding: 0 1em; }
+    display: flex;
+    align-items: center; }
+    .page .fixed-view .about-btn {
+      font-size: 12px;
+      color: #275b8c;
+      border-bottom: 1px solid #275b8c;
+      line-height: 1.8;
+      padding: 0 .2em; }
+    .page .fixed-view .github-btn {
+      padding-left: .5em;
+      width: 19px;
+      height: 19px; }
 
 @media (max-width: 768px) {
   .page .main {
