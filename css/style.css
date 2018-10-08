@@ -275,6 +275,8 @@ body {
   .page .main {
     padding: 0 2%;
     padding-top: 30px; }
+    .page .main .personal-profile {
+      width: 90%; }
     .page .main .show-case {
       padding-top: 25px; }
       .page .main .show-case li {
