@@ -103,9 +103,6 @@
   100% {
     opacity: 1;
     display: block; } }
-body {
-  font-family: PingFang SC,Lantinghei SC,Microsoft Yahei,WenQuanYi Micro Hei,sans-serif; }
-
 .page {
   position: relative;
   z-index: 1; }
