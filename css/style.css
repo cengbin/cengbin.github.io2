@@ -267,9 +267,11 @@ body {
       line-height: 1.8;
       padding: 0 .2em; }
     .page .fixed-view .github-btn {
-      padding-left: .5em;
+      margin-left: .5em;
       width: 19px;
       height: 19px; }
+      .page .fixed-view .github-btn img {
+        display: block; }
 
 @media (max-width: 768px) {
   .page .main {
