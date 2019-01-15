@@ -7,8 +7,11 @@ function Cobweb(){
   var windowHeight=document.documentElement.clientHeight;
   var scale=(windowWidth/1200)>1?1:(windowWidth/1200);
 
-  var canvas=document.createElement("canvas");
-  document.body.appendChild(canvas);
+  var canvas=document.getElementById('webgl')
+  if(!canvas){
+    document.createElement("canvas");
+    document.body.appendChild(canvas);
+  }
   canvas.width=windowWidth;
   canvas.height=windowHeight;
   canvas.id="cobweb";

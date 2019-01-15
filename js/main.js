@@ -32,14 +32,6 @@ loadData("data/works.json","GET",function(data){
     items:items
   })
   document.getElementById('projectView').innerHTML=html;
-
-  var cobweb = new Cobweb().init();
-  function animate() {
-    requestAnimationFrame(animate);
-
-    cobweb.update();
-  }
-  animate();
 });
 
 
