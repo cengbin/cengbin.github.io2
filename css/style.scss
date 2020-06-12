@@ -1,271 +1,187 @@
-//@example @include css3(transition,0.5s);
-@mixin css3($property,$value){
-  @each $prefix in -webkit-,
-  -moz-,
-  -ms-,
-  -o-,
-  ''{
-    #{$prefix}#{$property}:$value;
+@keyframes mytitle {
+  0% {
+    transform: scale(1, 1);
+  }
+  15% {
+    transform: scale(1.25, 1.25);
+  }
+  30% {
+    transform: scale(1, 1);
   }
 }
 
-@mixin keyframes ($animation-name) {
-  @-webkit-keyframes #{$animation-name}{
-    @content;
-  }
-  @-moz-keyframes #{$animation-name}{
-    @content;
-  }
-  @-ms-keyframes #{$animation-name}{
-    @content;
-  }
-  @-o-keyframes #{$animation-name}{
-    @content;
-  }
-  @keyframes #{$animation-name}{
-    @content;
-  }
-}
+.home-page {
+  header {
+    position: relative;
+    z-index: 1;
+    color: black;
+    text-align: center;
+    line-height: 3em;
+    font-size: 30px;
+    span {
+      display: inline-block;
+      animation: mytitle 3s ease-in-out infinite normal;
+    }
 
-@include keyframes(slide-down){
-  0%{
-    opacity:0;
-    -webkit-transform:scale(.9) translate(0,-100%);
-    transform:scale(.9) translate(0,-100%);
+    @for $i from 1 through 20 {
+      span:nth-child(#{$i}) {
+        animation-delay: #{$i/10}s;
+      }
+    }
   }
-  100%{
-    opacity:1;
-    -webkit-transform:scale(1) translate(0,0);
-    transform:scale(1) translate(0,0);
-  }
-}
-@include keyframes(home){
-  0%{
-    opacity:1;
-  }
-  100%{
-    opacity:0;
-    display: none;
-  }
-}
-@include keyframes(main){
-  0%{
-    opacity:0;
-  }
-  100%{
-    opacity:1;
-    display: block;
-  }
-}
 
-.page{
-  position:relative;
-  z-index:1;
+  nav {
+    position: fixed;
+    right: 2em;
+    bottom: 1em;
+    z-index: 99;
+    display: flex;
+    align-items: center;
 
-  .home{
-    position:relative;
-    z-index:2;
-
-    .welcome{
-      padding-top:20%;
-      font-size: 100px;
-      text-align: center;
-      color:white;
-      text-shadow: 0 0 10px rgba(255,0,0,0.95);
-      span{
-        opacity: 0;
-        display: inline-block;
-        @include css3(animation,slide-down 2s ease 0s);
-        @include css3(animation-fill-mode,forwards);
-
-        $delay:0s;
-        &:nth-child(1){//w
-          @include css3(animation-delay,$delay+.5s);
-        }
-        &:nth-child(2){//e
-          @include css3(animation-delay,$delay+.2s);
-        }
-        &:nth-child(3){//l
-          @include css3(animation-delay,$delay+.7s);
-        }
-        &:nth-child(4){//c
-          @include css3(animation-delay,$delay+.4s);
-        }
-        &:nth-child(5){//o
-          @include css3(animation-delay,$delay+.2s);
-        }
-        &:nth-child(6){//m
-          @include css3(animation-delay,$delay+.9s);
-        }
-        &:nth-child(7){//e
-          @include css3(animation-delay,$delay+.1s);
+    a {
+      &:first-child {
+        font-size: 12px;
+        color: #275b8c;
+        border-bottom: 1px solid #275b8c;
+        line-height: 1.8;
+        padding: 0 .2em;
+      }
+      &:last-child {
+        margin-left: 6px;
+        width: 19px;
+        height: 19px;
+        img {
+          display: block;
         }
       }
     }
   }
 
+  main {
+    position: relative;
+    z-index: 1;
 
-
-  .main{
-    padding-top:50px;
-
-    .personal-profile{
-      width:50%;
-      padding:0 1%;
-      color: #444;
-      text-align: center;
-      line-height:2;
-      p{
-        line-height:1.5;
-      }
-      p:nth-child(2){
-        font-size:20px;
-      }
-      p:nth-child(3){
-        font-size:14px;
-      }
-    }
-
-    .show-case{
-      padding-top:50px;
-      li{
+    .show-case {
+      li {
         display: inline-block;
-        height:auto;
-        padding:0 1%;
+        height: auto;
+        padding: 0 1%;
 
-        .item-view{
-          display:block;
-          margin-bottom:10%;
-          box-shadow:0px 1px 10px rgba(0,0,0,0.4);
+        .item-view {
+          display: block;
+          margin-bottom: 10%;
+          box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.4);
         }
-        a:active{
+        a:active {
           text-decoration: none;
 
-          div{
+          div {
             text-decoration: none;
           }
         }
-        a:hover .item-mask{
+        a:hover .item-mask {
           opacity: 1;
         }
 
-        a:hover .item-img{
-          transform:scale(1.02,1.02);
-          -webkit-transform:scale(1.02,1.02);
+        a:hover .item-img {
+          transform: scale(1.02, 1.02);
+          -webkit-transform: scale(1.02, 1.02);
         }
 
-        .item-head{
-          position:relative;
-          width:100%;
+        .item-head {
+          position: relative;
+          width: 100%;
           height: auto;
-          overflow:hidden;
+          overflow: hidden;
 
-          .item-img{
-            display:block;
-            width:100%;
-            height:auto;
+          .item-img {
+            display: block;
+            width: 100%;
+            height: auto;
             transform-origin: center center;
             -webkit-transform-origin: center center;
 
-            transition:transform 0.6s ease-out;
-            -webkit-transition:-webkit-transform 0.6s ease-out;
+            transition: transform 0.6s ease-out;
+            -webkit-transition: -webkit-transform 0.6s ease-out;
           }
 
-          .item-mask{
-            position:absolute;
-            top:0;
-            left:0;
-            width:100%;
-            height:100%;
-            background-color:rgba(0,0,0,0.3);
-            opacity:0;
-            transition:opacity 0.3s ease-out;
-            -webkit-transition:opacity 0.6s ease-out;
+          .item-mask {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.3);
+            opacity: 0;
+            transition: opacity 0.3s ease-out;
+            -webkit-transition: opacity 0.6s ease-out;
 
-            .item-codeimg{
-              position:absolute;
-              top:50%;
-              left:50%;
-              width:80%;
-              height:auto;
-              transform:translate(-50%,-50%);
-              -webkit-transform:translate(-50%,-50%);
+            .item-codeimg {
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              width: 80%;
+              height: auto;
+              transform: translate(-50%, -50%);
+              -webkit-transform: translate(-50%, -50%);
             }
           }
         }
 
-        .item-brand{
-          font-size:16px;
-          color:#676767;
+        .item-brand {
+          font-size: 16px;
+          color: #676767;
           padding: 10px 10px 0;
           background-color: white;
         }
-        .item-proname{
-          font-size:22px;
-          color:black;
-          padding:0 10px;
+        .item-proname {
+          font-size: 22px;
+          color: black;
+          padding: 0 10px;
           background-color: white;
         }
 
-        .item-desc{
-          font-size:14px;
-          line-height:21px;
-          color:#676767;
-          padding:0 16px 30px;
+        .item-desc {
+          font-size: 14px;
+          line-height: 21px;
+          color: #676767;
+          padding: 0 16px 30px;
           background-color: white;
-          text-shadow: 0 0 10px rgba(255,0,0,0.35);
+          text-shadow: 0 0 10px rgba(255, 0, 0, 0.35);
         }
       }
     }
   }
 
-  .fixed-view{
-    position:fixed;
-    right:2em;
-    bottom:1em;
-    display:flex;
-    align-items: center;
-
-    .about-btn{
-      font-size:12px;
-      color:#275b8c;
-      border-bottom:1px solid #275b8c;
-      line-height:1.8;
-      padding:0 .2em;
-    }
-
-    .github-btn{
-      margin-left:.5em;
-      width:19px;
-      height:19px;
-      img{
-        display:block;
-      }
-    }
+  footer{
+    position: relative;
+    z-index:3;
+    color:white;
+    text-align: center;
+    line-height: 3em;
   }
 }
 
-@media (max-width: 768px){
-  .page{
-    .main{
-      padding:0 2%;
-      padding-top:30px;
+@media (max-width: 768px) {
+  .home-page {
+    header {
+      font-size: 20px;
+    }
 
-      .personal-profile{
-        width:90%;
-      }
-      .show-case{
-        padding-top:25px;
-        li{
-          padding:0 2%;
-          .item-brand{
-            font-size:14px;
+    main {
+      padding: 0 2%;
+
+      .show-case {
+        li {
+          padding: 0 2%;
+          .item-brand {
+            font-size: 14px;
           }
-          .item-proname{
-            font-size:18px;
+          .item-proname {
+            font-size: 18px;
           }
-          .item-desc{
-            font-size:11px;
+          .item-desc {
+            font-size: 11px;
           }
         }
       }

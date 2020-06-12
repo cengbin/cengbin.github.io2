@@ -7,20 +7,27 @@
     <link rel="stylesheet" href="css/bin.css"/>
     <link rel="stylesheet" href="css/style.css"/>
   </head>
-  <body>
+  <body class="home-page">
     <canvas id="webgl"></canvas>
-    <div class="page">
-      <div class="main">
-        <div class="container">
-          <ul class="row show-case" id="projectView"></ul>
-        </div>
+    <header>
+      <span>W</span><span>e</span><span>l</span><span>c</span><span>o</span><span>m</span><span>e</span>
+      <span>t</span><span>o</span>
+      <span>m</span><span>y</span>
+      <span>w</span><span>e</span><span>b</span><span>s</span><span>i</span><span>t</span><span>e</span>
+    </header>
+    <nav>
+      <a href="about.html">关于作者</a>
+      <a href="https://github.com/siyuanqiao" target="_blank"><img src="./img/github_icon.svg"></a>
+    </nav>
+    <main>
+      <div class="container">
+        <ul class="row show-case" id="projectView"></ul>
       </div>
+    </main>
+    <footer>
+      没有更多了 (◐‿◑)﻿
+    </footer>
 
-      <div class="fixed-view">
-        <a class="about-btn" href="about.html">关于作者</a>
-        <a class="github-btn" href="https://github.com/siyuanqiao" target="_blank"><img src="./img/github_icon.svg"></a>
-      </div>
-    </div>
     <script type="text/html" id="itemTemplte">
       <% items.forEach(function (item){ %>
       <li class="col-6 col-sm-4 col-xl-3">
@@ -33,7 +40,7 @@
               <% } %>
             </div>
             <h2 class="item-brand"><%= item.brand %></h2>
-            <div class="item-proname"><%= item.name %></div>
+            <div class="item-proname"><%= item.pro_name %></div>
           </a>
           <div class="item-desc"><%= item.desc %></div>
         </div>

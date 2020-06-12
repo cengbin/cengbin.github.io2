@@ -4,40 +4,39 @@ function onload() {
   var vsFile = './shaders/gradient_vert.glsl'
   var fsFile = './shaders/gradient_frag.glsl'
 
-  loadShaders(vsFile,fsFile)
+  loadShaders(vsFile, fsFile)
 }
 
-function loadShaders(vsFile,fsFile){
+function loadShaders(vsFile, fsFile) {
   var vs = null;
   var fs = null;
 
   var onShaderLoaded = function () {
-    if(vs && fs) {
-      initWebGL(vs,fs)
+    if (vs && fs) {
+      initWebGL(vs, fs)
     }
   };
 
-  loadShaderFromFile(vsFile,function(data){
+  loadShaderFromFile(vsFile, function (data) {
     vs = data
     onShaderLoaded()
   })
-  loadShaderFromFile(fsFile,function(data){
+  loadShaderFromFile(fsFile, function (data) {
     fs = data
     onShaderLoaded()
   })
 }
 
-function initWebGL(VSHADER_SOURCE,FSHADER_SOURCE){
-
+function initWebGL(VSHADER_SOURCE, FSHADER_SOURCE) {
   var width = document.documentElement.clientWidth;
   var height = document.documentElement.clientHeight;
   var canvas = document.getElementById('webgl');
   canvas.width = width;
   canvas.height = height;
-  canvas.style.position="fixed";
-  canvas.style.top="0";
-  canvas.style.left="0";
-  canvas.style.zIndex=0;
+  canvas.style.position = "fixed";
+  canvas.style.top = "0";
+  canvas.style.left = "0";
+  canvas.style.zIndex = 0;
 
   var gl = getWebGLContext(canvas);
   if (!gl) {
@@ -53,24 +52,25 @@ function initWebGL(VSHADER_SOURCE,FSHADER_SOURCE){
   initVertexBuffers(gl);
 
   var t = 0.0;
-  var time = gl.getUniformLocation(gl.program,'time');
-  if(time < 0){
+  var time = gl.getUniformLocation(gl.program, 'time');
+  if (time < 0) {
     console.log('Failed to get the storage location of time');
     return -1;
   }
-  gl.uniform1f(time,t)
+  gl.uniform1f(time, t)
 
-  render(gl,time,t)
+  render(gl, time, t)
 }
 
 const VERTICES_LENGTH = 4
-function render(gl,time,t){
-  t+=0.01;
-  gl.uniform1f(time,t);
+
+function render(gl, time, t) {
+  t += 0.01;
+  gl.uniform1f(time, t);
 
   draw(gl, VERTICES_LENGTH);
 
-  requestAnimationFrame(render.bind(this,gl,time,t))
+  requestAnimationFrame(render.bind(this, gl, time, t))
 }
 
 function draw(gl, n) {
