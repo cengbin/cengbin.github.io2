@@ -1,51 +1,51 @@
 <!DOCTYPE html>
 <html>
-<head lang="en">
+  <head lang="en">
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1" name="viewport"/>
     <title>作品集</title>
     <link rel="stylesheet" href="css/bin.css"/>
     <link rel="stylesheet" href="css/style.css"/>
-</head>
-<body>
-<canvas id="webgl"></canvas>
-<div class="page">
-    <div class="main">
+  </head>
+  <body>
+    <canvas id="webgl"></canvas>
+    <div class="page">
+      <div class="main">
         <div class="container">
-            <ul class="row show-case" id="projectView"></ul>
+          <ul class="row show-case" id="projectView"></ul>
         </div>
-    </div>
+      </div>
 
-    <div class="fixed-view">
+      <div class="fixed-view">
         <a class="about-btn" href="about.html">关于作者</a>
-        <a class="github-btn" href="https://github.com/urlzengbin" target="_blank"><img src="./img/github_icon.svg"></a>
+        <a class="github-btn" href="https://github.com/siyuanqiao" target="_blank"><img src="./img/github_icon.svg"></a>
+      </div>
     </div>
-</div>
-</body>
+    <script type="text/html" id="itemTemplte">
+      <% items.forEach(function (item){ %>
+      <li class="col-6 col-sm-4 col-xl-3">
+        <div class="item-view">
+          <a href="<%= item.link %>" target="_blank">
+            <div class="item-head">
+              <img class="item-img" src="<%= item.thumbnailUrl %>">
+              <% if(item.codeUrl){%>
+              <div class='item-mask'><img class='item-codeimg' src='<%= item.codeUrl %>' alt=''/></div>
+              <% } %>
+            </div>
+            <h2 class="item-brand"><%= item.brand %></h2>
+            <div class="item-proname"><%= item.name %></div>
+          </a>
+          <div class="item-desc"><%= item.desc %></div>
+        </div>
+      </li>
+      <% })%>
+    </script>
+    <script src="lib/webgl/cuon-utils.js"></script>
+    <script src="lib/webgl/webgl-utils.js"></script>
+    <script src="lib/webgl/webgl-debug.js"></script>
+    <script src="js/gradient.js"></script>
+    <script src="js/mito.js"></script>
+    <script src="js/main.js"></script>
+  </body>
 </html>
 <html>
-<script type="text/html" id="itemTemplte">
-    <% items.forEach(function (item){ %>
-    <li class="col-6 col-sm-4 col-xl-3">
-        <div class="item-view">
-            <a href="<%= item.link %>" target="_blank">
-                <div class="item-head">
-                    <img class="item-img" src="<%= item.thumbnailUrl %>">
-                    <% if(item.codeUrl){%>
-                    <div class='item-mask'><img class='item-codeimg' src='<%= item.codeUrl %>' alt=''/></div>
-                    <% } %>
-                </div>
-                <h2 class="item-brand"><%= item.brand %></h2>
-                <div class="item-proname"><%= item.name %></div>
-            </a>
-            <div class="item-desc"><%= item.desc %></div>
-        </div>
-    </li>
-    <% })%>
-</script>
-<script src="lib/webgl/cuon-utils.js"></script>
-<script src="lib/webgl/webgl-utils.js"></script>
-<script src="lib/webgl/webgl-debug.js"></script>
-<script src="js/gradient.js"></script>
-<script src="js/mito.js"></script>
-<script src="js/main.js"></script>

@@ -23,7 +23,7 @@ loadData("data/works.json","GET",function(data){
 
     if(!item.link)item.link = "javascript:void(0);"
     item.thumbnailUrl = "./img/pro/" + item.name + "_" + item.time + ".jpg";
-    item.codeUrl = (item.codeImg === 0)?null:"./img/pro/" + item.name + "_" + item.time + "_code.png";
+    item.codeUrl = (item.codeImg === 0)?null:null;
   }
 
   var item_template = document.getElementById('itemTemplte').innerHTML
