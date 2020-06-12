@@ -22,8 +22,8 @@ loadData("data/works.json","GET",function(data){
     var item = items[i]
 
     if(!item.link)item.link = "javascript:void(0);"
-    item.thumbnailUrl = "http://h5n.180china.com/game/pro/" + item.name + "_" + item.time + ".jpg";
-    item.codeUrl = (item.codeImg === 0)?null:"http://h5n.180china.com/game/pro/" + item.name + "_" + item.time + "_code.png";
+    item.thumbnailUrl = "./img/pro/" + item.name + "_" + item.time + ".jpg";
+    item.codeUrl = (item.codeImg === 0)?null:"./img/pro/" + item.name + "_" + item.time + "_code.png";
   }
 
   var item_template = document.getElementById('itemTemplte').innerHTML

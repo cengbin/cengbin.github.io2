@@ -1,298 +1,296 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no,viewport-fit=cover">
-  <style>
-    html {
-      -webkit-text-size-adjust: 100%;
-      -moz-text-size-adjust: 100%;
-      -ms-text-size-adjust: 100%;
-      text-size-adjust: 100%;
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
-      -webkit-font-kerning: normal;
-      font-kerning: normal;
-      line-height: 1.625;
-      font-family: system-ui, -apple-system, Segoe UI, Roboto, Noto Sans, Ubuntu, Cantarell, Helvetica Neue, sans-serif;
-      font-size: 100%;
-      font-weight: 400;
-      color: #222;
-      height: 100%
-    }
-
-    body, html {
-      margin: 0;
-      padding: 0;
-      border: 0;
-      width: 100%;
-      overflow-x: hidden
-    }
-
-    body {
-      min-height: 100%
-    }
-
-    img {
-      border: none
-    }
-
-    a {
-      color: #d82a4a;
-      -webkit-transform-origin: 0 50%;
-      transform-origin: 0 50%;
-      cursor: pointer;
-      text-decoration: none;
-      transition: 0.25s;
-      outline: none
-    }
-
-    a:hover {
-      color: #222
-    }
-
-    a:active {
-      -webkit-filter: blur(2px);
-      filter: blur(2px)
-    }
-
-    a:not([class]) {
-      border-bottom: 1px solid;
-      position: relative
-    }
-
-    a:not([class]):before {
-      content: "";
-      display: block;
-      position: absolute;
-      top: -4px;
-      right: -4px;
-      bottom: -4px;
-      left: -4px;
-      box-shadow: 0 0 2px 4px #d82a4a;
-      transition: 0.25s;
-      opacity: 0;
-      pointer-events: none
-    }
-
-    a:not([class]):focus:before {
-      opacity: 1
-    }
-
-    svg {
-      fill: currentColor;
-      display: block
-    }
-
-    .a {
-      position:relative;
-      z-index:1;
-      min-height: 100vh;
-      width: 100%;
-      max-width: 600px;
-      background: rgba(255,255,255,.5);
-      padding: 1.5625rem;
-      margin: 0 auto
-    }
-
-    .a, .b {
-      box-sizing: border-box
-    }
-
-    .b {
-      padding: env(safe-area-inset-top, 0px) env(safe-area-inset-right, 0px) env(safe-area-inset-bottom, 0px) env(safe-area-inset-left, 0px)
-    }
-
-    .c {
-      text-align: center;
-      line-height: 1;
-      margin: 0 0 calc(1 * 26px)
-    }
-
-    .e {
-      margin: 0;
-      padding: 0;
-      font-size: 3.125rem;
-      font-weight: 600;
-      line-height: 1;
-      opacity: .99
-    }
-
-    .f {
-      margin: 0;
-      padding: .3125rem .625rem;
-      font-weight: 400;
-      background: #d82a4a;
-      color: #fff;
-      display: inline-block
-    }
-
-    .g {
-      width: 250px;
-      height: 250px;
-      background: #d82a4a;
-      border-radius: 40px 53% 40px 53%/40% 53% 40% 53%;
-      margin: 0 auto 26px
-    }
-
-    .h {
-      display: block;
-      height: 100%;
-      width: 100%;
-      object-fit: cover;
-      object-position: 0 0;
-      border-radius: 50%;
-      overflow: hidden;
-      z-index: 1
-    }
-
-    .i {
-      margin: 0 0 calc(1 * 26px)
-    }
-
-    .j {
-      display: inline-block;
-      margin: 0;
-      padding: 0;
-      font-weight: 400;
-      font-size: 1.375rem
-    }
-
-    .k {
-      margin: 0 0 calc(1.125 * 26px)
-    }
-
-    .l {
-      margin: 0;
-      padding: 0;
-      list-style: none
-    }
-
-    .m:before {
-      content: "";
-      display: inline-block;
-      height: 6px;
-      width: 6px;
-      background: #d82a4a;
-      margin: 0 1ch .125rem .0625rem
-    }
-
-    .n p {
-      padding: 0;
-      margin: 0 0 .5em
-    }
-
-    @media (prefers-reduced-motion: reduce) {
-      *, :after, :before {
-        transition: none !important;
-        -webkit-animation: none !important;
-        animation: none !important
-      }
-    }
-
-    @media (prefers-color-scheme: dark) {
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no,viewport-fit=cover">
+    <style>
       html {
-        color: #fff;
-        background: #222
+        -webkit-text-size-adjust: 100%;
+        -moz-text-size-adjust: 100%;
+        -ms-text-size-adjust: 100%;
+        text-size-adjust: 100%;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        -webkit-font-kerning: normal;
+        font-kerning: normal;
+        line-height: 1.625;
+        font-family: system-ui, -apple-system, Segoe UI, Roboto, Noto Sans, Ubuntu, Cantarell, Helvetica Neue, sans-serif;
+        font-size: 100%;
+        font-weight: 400;
+        color: #222;
+        height: 100%
+      }
+
+      body, html {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        width: 100%;
+        overflow-x: hidden
+      }
+
+      body {
+        min-height: 100%
+      }
+
+      img {
+        border: none
       }
 
       a {
-        color: #ff3c60
+        color: #d82a4a;
+        -webkit-transform-origin: 0 50%;
+        transform-origin: 0 50%;
+        cursor: pointer;
+        text-decoration: none;
+        transition: 0.25s;
+        outline: none
       }
 
       a:hover {
-        color: #fff
+        color: #222
+      }
+
+      a:active {
+        -webkit-filter: blur(2px);
+        filter: blur(2px)
+      }
+
+      a:not([class]) {
+        border-bottom: 1px solid;
+        position: relative
       }
 
       a:not([class]):before {
-        color: #ff3c60
+        content: "";
+        display: block;
+        position: absolute;
+        top: -4px;
+        right: -4px;
+        bottom: -4px;
+        left: -4px;
+        box-shadow: 0 0 2px 4px #d82a4a;
+        transition: 0.25s;
+        opacity: 0;
+        pointer-events: none
+      }
+
+      a:not([class]):focus:before {
+        opacity: 1
+      }
+
+      svg {
+        fill: currentColor;
+        display: block
       }
 
       .a {
-        background: #222
+        position: relative;
+        z-index: 1;
+        min-height: 100vh;
+        width: 100%;
+        max-width: 600px;
+        background: rgba(255, 255, 255, .5);
+        padding: 1.5625rem;
+        margin: 0 auto
       }
 
-      .f {
-        background: #ff3c60
+      .a, .b {
+        box-sizing: border-box
       }
 
-      .g {
-        background: #ff3c60
+      .b {
+        padding: env(safe-area-inset-top, 0px) env(safe-area-inset-right, 0px) env(safe-area-inset-bottom, 0px) env(safe-area-inset-left, 0px)
       }
 
-      .m:before {
-        background: #ff3c60
-      }
-    }
-
-    @media (max-width: 56.25rem) {
-      .a {
-        max-width: 60%
-      }
-    }
-
-    @media (max-width: 46.875rem) {
-      .a {
-        max-width: none
+      .c {
+        text-align: center;
+        line-height: 1;
+        margin: 0 0 calc(1 * 26px)
       }
 
       .e {
-        font-size: calc(2.1875rem + 2vw)
+        margin: 0;
+        padding: 0;
+        font-size: 3.125rem;
+        font-weight: 600;
+        line-height: 1;
+        opacity: .99
       }
-    }
 
-    @media (max-width: 31.25rem) {
-      .a {
-        padding: 26px
+      .f {
+        margin: 0;
+        padding: .3125rem .625rem;
+        font-weight: 400;
+        background: #d82a4a;
+        color: #fff;
+        display: inline-block
       }
 
       .g {
-        width: 150px;
-        height: 150px;
-        margin: 0 auto calc(26px / 2)
+        width: 250px;
+        height: 250px;
+        background: #d82a4a;
+        border-radius: 40px 53% 40px 53%/40% 53% 40% 53%;
+        margin: 0 auto 26px;
+        overflow:hidden;
       }
-    }</style>
-  <title>关于作者</title>
-</head>
-<body>
-<canvas id="webgl"></canvas>
-<main class="a">
-  <div class="b">
-    <div class="g">
-      <picture>
-        <!--<img class="h" src="" alt="Иван Соловьев. Фото" itemprop="image">-->
-      </picture>
-    </div>
-    <div class="c">
-      <h1 class="e"><span>Chuck</span></h1>
-      <h2 class="f">前端开发人员</h2>
-    </div>
-    <section class="i k">
-      <h3 class="j">联系我</h3>
-      <div>
-        <a href="https://github.com/iiig" target="_blank">GitHub</a>
+
+      .h {
+        display: block;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        object-position: 0 0;
+        overflow: hidden;
+        z-index: 1
+      }
+
+      .i {
+        margin: 0 0 calc(1 * 26px)
+      }
+
+      .j {
+        display: inline-block;
+        margin: 0;
+        padding: 0;
+        font-weight: 400;
+        font-size: 1.375rem
+      }
+
+      .k {
+        margin: 0 0 calc(1.125 * 26px)
+      }
+
+      .l {
+        margin: 0;
+        padding: 0;
+        list-style: none
+      }
+
+      .m:before {
+        content: "";
+        display: inline-block;
+        height: 6px;
+        width: 6px;
+        background: #d82a4a;
+        margin: 0 1ch .125rem .0625rem
+      }
+
+      .n p {
+        padding: 0;
+        margin: 0 0 .5em
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        *, :after, :before {
+          transition: none !important;
+          -webkit-animation: none !important;
+          animation: none !important
+        }
+      }
+
+      @media (prefers-color-scheme: dark) {
+        html {
+          color: #fff;
+          background: #222
+        }
+
+        a {
+          color: #ff3c60
+        }
+
+        a:hover {
+          color: #fff
+        }
+
+        a:not([class]):before {
+          color: #ff3c60
+        }
+
+        .a {
+          background: #222
+        }
+
+        .f {
+          background: #ff3c60
+        }
+
+        .g {
+          background: #ff3c60
+        }
+
+        .m:before {
+          background: #ff3c60
+        }
+      }
+
+      @media (max-width: 56.25rem) {
+        .a {
+          max-width: 60%
+        }
+      }
+
+      @media (max-width: 46.875rem) {
+        .a {
+          max-width: none
+        }
+
+        .e {
+          font-size: calc(2.1875rem + 2vw)
+        }
+      }
+
+      @media (max-width: 31.25rem) {
+        .a {
+          padding: 26px
+        }
+
+        .g {
+          width: 150px;
+          height: 150px;
+          margin: 0 auto calc(26px / 2)
+        }
+      }</style>
+    <title>关于作者</title>
+  </head>
+  <body>
+    <canvas id="webgl"></canvas>
+    <main class="a">
+      <div class="b">
+        <div class="g">
+          <img class="h" src="./img/picture.jpg" alt="Иван Соловьев. Фото">
+        </div>
+        <div class="c">
+          <h1 class="e"><span>Chuck</span></h1>
+          <h2 class="f">前端开发人员</h2>
+        </div>
+        <section class="i k">
+          <h3 class="j">联系我</h3>
+          <div>
+            <a href="https://github.com/siyuanqiao" target="_blank">GitHub</a>
+          </div>
+        </section>
+        <section class="i ">
+          <h3 class="j">活动</h3>
+          <ul class="l">
+            <li class="m">我在曾经在<a href="#" target="_blank">百度移信/VIPKID/多点</a>工作</li>
+            <li class="m">自由职业者</li>
+          </ul>
+        </section>
+        <section class="i ">
+          <h3 class="j">关于我</h3>
+          <div class="n">
+            <p>我每天都在工作，自学和实验，努力做最优秀的自己.</p>
+            <p>6年前端开发经验,掌握HTML5新特性,CSS3,ES6新特性,TypeScript,前端模块化开发项目.</p>
+            <p>掌握前端MVVM开发框架Vue/React,WEBGL 2D渲染引擎PIXI/Egret.</p>
+            <p>善于开发移动端SPA应用与基于WEBGL的H5.</p>
+          </div>
+        </section>
       </div>
-    </section>
-    <section class="i ">
-      <h3 class="j">活动</h3>
-      <ul class="l">
-        <li class="m">我在曾经在<a href="#" target="_blank">百度移信</a>工作</li>
-        <li class="m">自由职业者</li>
-      </ul>
-    </section>
-    <section class="i ">
-      <h3 class="j">关于我</h3>
-      <div class="n">
-        <p>我每天都在工作，自学和实验，努力做最优秀的自己.</p>
-        <p>5年前端开发经验,掌握HTML5新特性,CSS3,ES6新特性,前端模块化开发项目.</p>
-        <p>掌握前端MVVM开发框架Vue.js / WEB 2D渲染引擎PIXI,Egret / Node.</p>
-        <p>善于开发移动端SPA应用与基于WebGL的H5.</p>
-      </div>
-    </section>
-  </div>
-</main>
-</div>
-</body>
+    </main>
+    </div>
+  </body>
 </html>
 <script src="js/particle/Cobweb.js"></script>
 <script>
