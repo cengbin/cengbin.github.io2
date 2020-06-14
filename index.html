@@ -32,17 +32,26 @@
       <% items.forEach(function (item){ %>
       <li class="col-6 col-sm-4 col-xl-3">
         <div class="item-view">
-          <a href="<%= item.link %>" target="_blank">
-            <div class="item-head">
-              <img class="item-img" src="<%= item.thumbnailUrl %>">
-              <% if(item.codeUrl){%>
-              <div class='item-mask'><img class='item-codeimg' src='<%= item.codeUrl %>' alt=''/></div>
-              <% } %>
+          <a href="<%=(item.link && item.link!=='' ? item.link : 'javascript:void(0);')%>">
+            <div class="item-up">
+              <div class="thumbnail">
+                <img class="item-img" src="<%= item.thumbnail %>">
+              </div>
             </div>
-            <h2 class="item-brand"><%= item.brand %></h2>
-            <div class="item-proname"><%= item.pro_name %></div>
+            <div class="item-down">
+              <h2 class="title"><%= item.title %></h2>
+
+              <% if(item.intro && item.intro!==''){%>
+              <div class="intro"><%= item.intro %></div>
+              <% } %>
+
+              <div class="description"><%= item.description %></div>
+              <p class="date">
+                <span><%= item.date %></span> | <span><%= item.client%></span>
+              </p>
+            </div>
           </a>
-          <div class="item-desc"><%= item.desc %></div>
+
         </div>
       </li>
       <% })%>

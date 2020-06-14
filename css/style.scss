@@ -72,91 +72,76 @@
           margin-bottom: 10%;
           box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.4);
         }
-        a:active {
-          text-decoration: none;
 
-          div {
-            text-decoration: none;
-          }
-        }
-        a:hover .item-mask {
-          opacity: 1;
-        }
-
-        a:hover .item-img {
+        .item-up:hover .thumbnail img {
           transform: scale(1.02, 1.02);
           -webkit-transform: scale(1.02, 1.02);
         }
 
-        .item-head {
+        .item-up {
+          cursor: pointer;
           position: relative;
           width: 100%;
           height: auto;
           overflow: hidden;
 
-          .item-img {
-            display: block;
-            width: 100%;
-            height: auto;
-            transform-origin: center center;
-            -webkit-transform-origin: center center;
-
-            transition: transform 0.6s ease-out;
-            -webkit-transition: -webkit-transform 0.6s ease-out;
-          }
-
-          .item-mask {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.3);
-            opacity: 0;
-            transition: opacity 0.3s ease-out;
-            -webkit-transition: opacity 0.6s ease-out;
-
-            .item-codeimg {
-              position: absolute;
-              top: 50%;
-              left: 50%;
-              width: 80%;
+          .thumbnail {
+            img {
+              display: block;
+              width: 100%;
               height: auto;
-              transform: translate(-50%, -50%);
-              -webkit-transform: translate(-50%, -50%);
+              transform-origin: center center;
+              -webkit-transform-origin: center center;
+
+              transition: transform 0.6s ease-out;
+              -webkit-transition: -webkit-transform 0.6s ease-out;
             }
           }
         }
 
-        .item-brand {
-          font-size: 16px;
-          color: #676767;
-          padding: 10px 10px 0;
+        .item-down {
           background-color: white;
-        }
-        .item-proname {
-          font-size: 22px;
-          color: black;
-          padding: 0 10px;
-          background-color: white;
-        }
+          padding: 10px;
+          font-family: Avenir-Light, PingFangSC-Light, Arial, Microsoft YaHei Light, 微软雅黑, sans-serif;
 
-        .item-desc {
-          font-size: 14px;
-          line-height: 21px;
-          color: #676767;
-          padding: 0 16px 30px;
-          background-color: white;
-          text-shadow: 0 0 10px rgba(255, 0, 0, 0.35);
+          .title {
+            padding: 10px 0 0;
+            font-size: 22px;
+            line-height: 1.2;
+            color: black;
+
+          }
+          .intro {
+            font-size: 16px;
+            color: #676767;
+          }
+
+          .description {
+            font-size: 14px;
+            line-height: 1.5;
+            color: #676767;
+            margin: 10px 6px 0;
+            text-shadow: 0 0 10px rgba(255, 0, 0, 0.35);
+            word-wrap: break-word;
+            word-break: break-all;
+          }
+
+          .date {
+            text-align: right;
+            margin: 10px 6px 0;
+            font-size: 12px;
+            line-height: 25px;
+            color: #333;
+          }
         }
       }
     }
   }
 
-  footer{
+  footer {
     position: relative;
-    z-index:3;
-    color:white;
+    z-index: 3;
+    color: white;
     text-align: center;
     line-height: 3em;
   }
@@ -174,14 +159,19 @@
       .show-case {
         li {
           padding: 0 2%;
-          .item-brand {
-            font-size: 14px;
-          }
-          .item-proname {
-            font-size: 18px;
-          }
-          .item-desc {
-            font-size: 11px;
+          .item-down {
+            .title {
+              font-size: 16px;
+            }
+            .intro {
+              font-size: 14px;
+            }
+            .description {
+              font-size: 12px;
+            }
+            .date {
+              font-size: 10px;
+            }
           }
         }
       }

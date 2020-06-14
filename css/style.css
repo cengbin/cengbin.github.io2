@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @keyframes mytitle {
   0% {
     transform: scale(1, 1); }
@@ -85,21 +86,16 @@
       display: block;
       margin-bottom: 10%;
       box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.4); }
-    .home-page main .show-case li a:active {
-      text-decoration: none; }
-      .home-page main .show-case li a:active div {
-        text-decoration: none; }
-    .home-page main .show-case li a:hover .item-mask {
-      opacity: 1; }
-    .home-page main .show-case li a:hover .item-img {
+    .home-page main .show-case li .item-up:hover .thumbnail img {
       transform: scale(1.02, 1.02);
       -webkit-transform: scale(1.02, 1.02); }
-    .home-page main .show-case li .item-head {
+    .home-page main .show-case li .item-up {
+      cursor: pointer;
       position: relative;
       width: 100%;
       height: auto;
       overflow: hidden; }
-      .home-page main .show-case li .item-head .item-img {
+      .home-page main .show-case li .item-up .thumbnail img {
         display: block;
         width: 100%;
         height: auto;
@@ -107,41 +103,32 @@
         -webkit-transform-origin: center center;
         transition: transform 0.6s ease-out;
         -webkit-transition: -webkit-transform 0.6s ease-out; }
-      .home-page main .show-case li .item-head .item-mask {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(0, 0, 0, 0.3);
-        opacity: 0;
-        transition: opacity 0.3s ease-out;
-        -webkit-transition: opacity 0.6s ease-out; }
-        .home-page main .show-case li .item-head .item-mask .item-codeimg {
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          width: 80%;
-          height: auto;
-          transform: translate(-50%, -50%);
-          -webkit-transform: translate(-50%, -50%); }
-    .home-page main .show-case li .item-brand {
-      font-size: 16px;
-      color: #676767;
-      padding: 10px 10px 0;
-      background-color: white; }
-    .home-page main .show-case li .item-proname {
-      font-size: 22px;
-      color: black;
-      padding: 0 10px;
-      background-color: white; }
-    .home-page main .show-case li .item-desc {
-      font-size: 14px;
-      line-height: 21px;
-      color: #676767;
-      padding: 0 16px 30px;
+    .home-page main .show-case li .item-down {
       background-color: white;
-      text-shadow: 0 0 10px rgba(255, 0, 0, 0.35); }
+      padding: 10px;
+      font-family: Avenir-Light, PingFangSC-Light, Arial, Microsoft YaHei Light, 微软雅黑, sans-serif; }
+      .home-page main .show-case li .item-down .title {
+        padding: 10px 0 0;
+        font-size: 22px;
+        line-height: 1.2;
+        color: black; }
+      .home-page main .show-case li .item-down .intro {
+        font-size: 16px;
+        color: #676767; }
+      .home-page main .show-case li .item-down .description {
+        font-size: 14px;
+        line-height: 1.5;
+        color: #676767;
+        margin: 10px 6px 0;
+        text-shadow: 0 0 10px rgba(255, 0, 0, 0.35);
+        word-wrap: break-word;
+        word-break: break-all; }
+      .home-page main .show-case li .item-down .date {
+        text-align: right;
+        margin: 10px 6px 0;
+        font-size: 12px;
+        line-height: 25px;
+        color: #333; }
 .home-page footer {
   position: relative;
   z-index: 3;
@@ -156,11 +143,13 @@
     padding: 0 2%; }
     .home-page main .show-case li {
       padding: 0 2%; }
-      .home-page main .show-case li .item-brand {
+      .home-page main .show-case li .item-down .title {
+        font-size: 16px; }
+      .home-page main .show-case li .item-down .intro {
         font-size: 14px; }
-      .home-page main .show-case li .item-proname {
-        font-size: 18px; }
-      .home-page main .show-case li .item-desc {
-        font-size: 11px; } }
+      .home-page main .show-case li .item-down .description {
+        font-size: 12px; }
+      .home-page main .show-case li .item-down .date {
+        font-size: 10px; } }
 
 /*# sourceMappingURL=style.css.map */
