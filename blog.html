@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head lang="en">
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport"/>
+    <title>作品集</title>
+    <link rel="stylesheet" href="css/bin.css"/>
+    <link rel="stylesheet" href="css/blog.css"/>
+  </head>
+  <body class="home-page">
+    <!--<canvas id="webgl"></canvas>-->
+    <header>
+      <span>W</span><span>e</span><span>l</span><span>c</span><span>o</span><span>m</span><span>e</span>
+      <span>t</span><span>o</span>
+      <span>m</span><span>y</span>
+      <span>bg</span><span>l</span><span>o</span><span>g</span>
+    </header>
+    <!--<nav>
+      <a href="about.html">关于作者</a>
+      <a href="https://github.com/siyuanqiao" target="_blank"><img src="./img/github_icon.svg"></a>
+    </nav>-->
+    <main>
+      <div class="container">
+        <ul class="row show-case" id="projectView"></ul>
+      </div>
+    </main>
+    <footer>
+      没有更多了 (◐‿◑)﻿
+    </footer>
+
+    <script type="text/html" id="itemTemplte">
+      <% items.forEach(function (item){ %>
+      <li class="col-6 col-sm-4 col-xl-3">
+        <div class="item-view">
+          <a href="<%=(item.link && item.link!=='' ? item.link : 'javascript:void(0);')%>">
+            <div class="item-up">
+              <div class="thumbnail">
+                <img class="item-img" src="<%= item.thumbnail %>">
+              </div>
+            </div>
+            <div class="item-down">
+              <h2 class="title"><%= item.title %></h2>
+
+              <% if(item.intro && item.intro!==''){%>
+              <div class="intro"><%= item.intro %></div>
+              <% } %>
+
+              <div class="description"><%= item.description %></div>
+              <p class="date">
+                <span><%= item.date %></span> | <span><%= item.client%></span>
+              </p>
+            </div>
+          </a>
+
+        </div>
+      </li>
+      <% })%>
+    </script>
+    <!--<script src="lib/webgl/cuon-utils.js"></script>-->
+    <!--<script src="lib/webgl/webgl-utils.js"></script>-->
+    <!--<script src="lib/webgl/webgl-debug.js"></script>-->
+    <!--<script src="js/gradient.js"></script>-->
+    <script src="js/mito.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
+<html>

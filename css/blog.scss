@@ -17,6 +17,9 @@ a {
     font-family: 'satisfy';
     color: white;
     letter-spacing: 3px;
+
+    background-image: linear-gradient(0deg, #fff, #7af);
+
     span {
       display: inline-block;
       animation: mytitle 3s ease-in-out infinite normal;
@@ -107,19 +110,19 @@ a {
             padding: 10px 0 0;
             font-size: 22px;
             line-height: 1.2;
-            color: black;
-
+            color: #333;
           }
+
           .intro {
             font-size: 16px;
-            color: #676767;
+            color: #444;
           }
 
           .description {
-            font-size: 14px;
+            font-size: 12px;
             line-height: 1.5;
             color: #676767;
-            margin: 10px 6px 0;
+            margin-top: 10px;
             text-shadow: 0 0 10px rgba(255, 0, 0, 0.35);
             word-wrap: break-word;
             word-break: break-all;

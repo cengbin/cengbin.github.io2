@@ -1,0 +1,205 @@
+@import "reset";
+@import "icon";
+
+html {
+  --color-link: #5f5f5f;
+  --color-link-hover: #ff963b;
+  --color-enter: #fff;
+  --color-title: #fff;
+  --color-content: #222325;
+  --font-alt: 200 6vw/1 "Comic Sans MS", "Helvetica Neue", "Microsoft Yahei", "Microsoft Yahei", -apple-system, sans-serif;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+}
+
+#background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.index {
+  section[class*=page] {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+
+    text-align: center;
+
+    .page-inner {
+      position: relative;
+      top: 50%;
+      transform: translate(0, -50%);
+    }
+  }
+
+  .page1 {
+    //background: radial-gradient(#313131, #0a0a0a);
+    animation: fadeOut 1s ease-in-out 3s 1 normal;
+    animation-fill-mode: forwards;
+
+    @keyframes fadeOut {
+      0% {
+        opacity: 1;
+        transform: translate(0, 0);
+      }
+
+      100% {
+        opacity: 0;
+        transform: translate(0, -100vh);
+      }
+    }
+
+    .title {
+      font-family: "Comic Sans MS", "Helvetica Neue", "Microsoft Yahei", -apple-system, sans-serif;
+      font-size: 4.7rem;
+      font-weight: 200;
+      color: var(--color-title);
+      line-height: 1;
+      margin-bottom: .3em;
+      animation: whiteShadow 1.5s ease-in-out infinite alternate;
+      text-shadow: rgb(69, 45, 45) 0 0 1px, rgb(255, 255, 251) 0 0 1px, rgb(255, 255, 251) 0 0 2px;
+    }
+
+    @keyframes whiteShadow {
+      from {
+        text-shadow: 0 0 1px #fff, 0 0 2px #fff, 0 0 3px #fff, 0 0 5px #333, 0 0 8px #333, 0 0 9px #333, 0 0 10px #333, 0 0 15px #333;
+      }
+      to {
+        text-shadow: 0 0 0.5px #fff, 0 0 1px #fff, 0 0 1.5px #fff, 0 0 2px #333, 0 0 4px #333, 0 0 5px #333, 0 0 6px #333, 0 0 8px #333;
+      }
+    }
+
+    .subtitle {
+      color: #fff;
+      font-family: "Comic Sans MS", "Helvetica Neue", "Microsoft Yahei", -apple-system, sans-serif;
+      font-size: 1.2rem;
+      font-weight: 200;
+      margin-bottom: 2em;
+      text-shadow: 0 0 4px #ffffff;
+
+      span {
+        animation: letter-glow 0.7s 0s ease both;
+      }
+    }
+
+    @keyframes letter-glow {
+      0% {
+        opacity: 0;
+        text-shadow: 0 0 1px rgba(255, 255, 255, 0.1);
+      }
+      66% {
+        opacity: 1;
+        text-shadow: 0 0 20px rgba(255, 255, 255, 0.9);
+      }
+      77% {
+        opacity: 1;
+      }
+      100% {
+        opacity: 0.7;
+        text-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+      }
+    }
+
+    $signatureLength: 38;
+    @for $i from 1 through $signatureLength {
+      .subtitle span:nth-child(#{$i}) {
+        animation-delay: 0.05s * $i;
+      }
+    }
+  }
+
+  .page2 {
+    opacity: 0;
+    //background: radial-gradient(#313131, #0a0a0a);
+
+    text-align: center;
+    transition: width ease 0.5s, height ease 0.5s;
+
+    animation: fadeIn 1s ease-in-out 3s 1 normal;
+    animation-fill-mode: forwards;
+
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+        transform: translate(0, 100vh);
+      }
+
+      100% {
+        opacity: 1;
+        transform: translate(0, 0px);
+      }
+    }
+
+    .page-inner {
+      user-select: none;
+      header {
+        img {
+          border: 3px solid #fff;
+          border-radius: 50%;
+          box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.3);
+          transition: 0.4s ease-in-out;
+        }
+
+        h1 {
+          margin: 15px 15px 0px;
+          color: #fff;
+          font-size: 2rem;
+          line-height: 1.2em;
+          font-weight: 300;
+        }
+
+        h2 {
+          color: #ccc;
+          letter-spacing: 3px;
+          font-size: 0.8rem;
+          font-weight: lighter;
+
+          margin: 13px 0;
+        }
+      }
+
+      ul {
+        list-style-type: none;
+        display: inline-block;
+        margin: 0;
+        padding: 40px 0;
+        border-top: 1px solid hsla(0, 0%, 100%, 0.1);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+
+        li {
+          display: inline-block;
+          padding: 0 30px;
+          border-left: solid 0.1px hsla(0, 0%, 100%, 0.1);
+          transition: all 0.2s;
+
+          &:last-child {
+            border-right: solid 0.1px hsla(0, 0%, 100%, 0.1);
+          }
+
+          &:hover {
+            transform: translateY(-2px);
+
+            a {
+              color: #f6f6f6;
+              text-shadow: 0 0 2px #f6f6f6;
+            }
+          }
+
+          a {
+            color: #b6b6b6;
+            transition: all 0.2s;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+

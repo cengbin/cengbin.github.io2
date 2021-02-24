@@ -1,67 +1,82 @@
 <!DOCTYPE html>
-<html>
-  <head lang="en">
+<html lang="en">
+  <head>
     <meta charset="UTF-8">
-    <meta content="width=device-width, initial-scale=1" name="viewport"/>
-    <title>作品集</title>
-    <link rel="stylesheet" href="css/bin.css"/>
-    <link rel="stylesheet" href="css/style.css"/>
+    <title>首页</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Tomotoes/font/font.min.css">
+    <link rel="stylesheet" href="css/index.css">
   </head>
-  <body class="home-page">
-    <canvas id="webgl"></canvas>
-    <header>
-      <span>W</span><span>e</span><span>l</span><span>c</span><span>o</span><span>m</span><span>e</span>
-      <span>t</span><span>o</span>
-      <span>m</span><span>y</span>
-      <span>w</span><span>e</span><span>b</span><span>s</span><span>i</span><span>t</span><span>e</span>
-    </header>
-    <nav>
-      <a href="about.html">关于作者</a>
-      <a href="https://github.com/siyuanqiao" target="_blank"><img src="./img/github_icon.svg"></a>
-    </nav>
-    <main>
-      <div class="container">
-        <ul class="row show-case" id="projectView"></ul>
-      </div>
-    </main>
-    <footer>
-      没有更多了 (◐‿◑)﻿
-    </footer>
-
-    <script type="text/html" id="itemTemplte">
-      <% items.forEach(function (item){ %>
-      <li class="col-6 col-sm-4 col-xl-3">
-        <div class="item-view">
-          <a href="<%=(item.link && item.link!=='' ? item.link : 'javascript:void(0);')%>">
-            <div class="item-up">
-              <div class="thumbnail">
-                <img class="item-img" src="<%= item.thumbnail %>">
-              </div>
-            </div>
-            <div class="item-down">
-              <h2 class="title"><%= item.title %></h2>
-
-              <% if(item.intro && item.intro!==''){%>
-              <div class="intro"><%= item.intro %></div>
-              <% } %>
-
-              <div class="description"><%= item.description %></div>
-              <p class="date">
-                <span><%= item.date %></span> | <span><%= item.client%></span>
-              </p>
-            </div>
-          </a>
-
+  <body>
+    <canvas id="background"></canvas>
+    <div class="index">
+      <section class="page page1">
+        <div class="page-inner">
+          <h2 class="title">Hello Welcome</h2>
+          <h3 class="subtitle" original-content="A man who loves life">
+            <span>A</span>
+            <span> </span>
+            <span>m</span><span>a</span><span>n</span>
+            <span>w</span><span>h</span><span>o</span>
+            <span> </span>
+            <span>l</span><span>o</span><span>v</span><span>e</span><span>s</span>
+            <span> </span>
+            <span>l</span><span>i</span><span>f</span><span>e</span>
+          </h3>
         </div>
-      </li>
-      <% })%>
+      </section>
+      <section class="page page2">
+        <div class="page-inner">
+          <header>
+            <img src="./img/picture.jpg" width="100" height="100" alt="avatar">
+            <h1>A Bin</h1>
+            <h2 id="signature" data-translate="signature">C &amp; C++ &amp; HTML &amp; CSS &amp; JS &amp; TS</h2>
+          </header>
+          <ul>
+            <li>
+              <a href="./blog.html">
+                <i class="icon icon-bokeyuan"></i>
+                <span>Blog</span>
+              </a>
+            </li>
+            <li>
+              <a href="./about.html">
+                <i class="icon icon-xiaolian"></i>
+                <span>About</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </div>
+    <script>
+      window.config = {
+        SIM_RESOLUTION: 128,
+        DYE_RESOLUTION: 1024,
+        CAPTURE_RESOLUTION: 512,
+        DENSITY_DISSIPATION: 1,
+        VELOCITY_DISSIPATION: 0.2,
+        PRESSURE: 0.8,
+        PRESSURE_ITERATIONS: 20,
+        CURL: 30,
+        SPLAT_RADIUS: 0.25,
+        SPLAT_FORCE: 6000,
+        SHADING: true,
+        COLORFUL: true,
+        COLOR_UPDATE_SPEED: 10,
+        PAUSED: false,
+        BACK_COLOR: {r: 30, g: 31, b: 33},
+        TRANSPARENT: false,
+        BLOOM: true,
+        BLOOM_ITERATIONS: 8,
+        BLOOM_RESOLUTION: 256,
+        BLOOM_INTENSITY: 0.4,
+        BLOOM_THRESHOLD: 0.8,
+        BLOOM_SOFT_KNEE: 0.7,
+        SUNRAYS: true,
+        SUNRAYS_RESOLUTION: 196,
+        SUNRAYS_WEIGHT: 1.0,
+      }
     </script>
-    <script src="lib/webgl/cuon-utils.js"></script>
-    <script src="lib/webgl/webgl-utils.js"></script>
-    <script src="lib/webgl/webgl-debug.js"></script>
-    <script src="js/gradient.js"></script>
-    <script src="js/mito.js"></script>
-    <script src="js/main.js"></script>
+    <script src="./js/background.js"></script>
   </body>
 </html>
-<html>
