@@ -1,18 +1,20 @@
 @charset "UTF-8";
-@keyframes mytitle {
-  0% {
-    transform: scale(1, 1); }
-  15% {
-    transform: scale(1.25, 1.25); }
-  30% {
-    transform: scale(1, 1); } }
+body {
+  cursor: url("../img/cursor.png"), auto; }
+
+a {
+  cursor: url("../img/cursor_hand.png"), auto !important; }
+
 .home-page header {
   position: relative;
   z-index: 1;
   color: black;
   text-align: center;
   line-height: 3em;
-  font-size: 30px; }
+  font-size: 30px;
+  font-family: 'satisfy';
+  color: white;
+  letter-spacing: 3px; }
   .home-page header span {
     display: inline-block;
     animation: mytitle 3s ease-in-out infinite normal; }
@@ -90,7 +92,7 @@
       transform: scale(1.02, 1.02);
       -webkit-transform: scale(1.02, 1.02); }
     .home-page main .show-case li .item-up {
-      cursor: pointer;
+      cursor: url("../img/cursor_hand.png"), auto !important;
       position: relative;
       width: 100%;
       height: auto;
@@ -136,6 +138,18 @@
   text-align: center;
   line-height: 3em; }
 
+@keyframes mytitle {
+  0% {
+    transform: scale(1, 1); }
+  15% {
+    transform: scale(1.25, 1.25); }
+  30% {
+    transform: scale(1, 1); } }
+@font-face {
+  font-family: 'satisfy';
+  font-style: normal;
+  font-weight: 400;
+  src: local("satisfy"), local("satisfy"), url("../font/satisfy.woff") format("woff"); }
 @media (max-width: 768px) {
   .home-page header {
     font-size: 20px; }

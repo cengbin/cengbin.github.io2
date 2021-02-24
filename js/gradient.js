@@ -1,13 +1,11 @@
-onload()
-
-function onload() {
-  var vsFile = './shaders/gradient_vert.glsl'
-  var fsFile = './shaders/gradient_frag.glsl'
+(function () {
+  var vsFile = './shader/gradient_vert.glsl'
+  var fsFile = './shader/gradient_frag.glsl'
 
   loadShaders(vsFile, fsFile)
-}
+})();
 
-function loadShaders(vsFile, fsFile) {
+function loadShaders (vsFile, fsFile) {
   var vs = null;
   var fs = null;
 
@@ -27,7 +25,7 @@ function loadShaders(vsFile, fsFile) {
   })
 }
 
-function initWebGL(VSHADER_SOURCE, FSHADER_SOURCE) {
+function initWebGL (VSHADER_SOURCE, FSHADER_SOURCE) {
   var width = document.documentElement.clientWidth;
   var height = document.documentElement.clientHeight;
   var canvas = document.getElementById('webgl');
@@ -64,7 +62,7 @@ function initWebGL(VSHADER_SOURCE, FSHADER_SOURCE) {
 
 const VERTICES_LENGTH = 4
 
-function render(gl, time, t) {
+function render (gl, time, t) {
   t += 0.01;
   gl.uniform1f(time, t);
 
@@ -73,7 +71,7 @@ function render(gl, time, t) {
   requestAnimationFrame(render.bind(this, gl, time, t))
 }
 
-function draw(gl, n) {
+function draw (gl, n) {
   // 指定清空<canvas>的颜色
   gl.clearColor(0, 0, 0, 1);
   gl.clear(gl.COLOR_BUFFER_BIT);
@@ -81,7 +79,7 @@ function draw(gl, n) {
   gl.drawArrays(gl.TRIANGLE_STRIP, 0, n)
 }
 
-function initVertexBuffers(gl) {
+function initVertexBuffers (gl) {
   var verticesSizesColors = new Float32Array([
     -1, 1, -0.3, 1.7,
     -1, -1, -0.3, -0.2,
