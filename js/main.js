@@ -9,21 +9,16 @@ function loadData (url, type, success) {
   xmlhttp.send();
 }
 
-//添加 项目集
-loadData("data/works.json", "GET", function (data) {
-  var items = JSON.parse(data);
-  for (var i = 0; i < items.length; i++) {
-    var item = items[i]
-    //
-    // if (!item.link) item.link = "javascript:void(0);"
-  }
+$(function () {
+  loadData("data/works.json", "GET", function (data) {
+    var items = JSON.parse(data);
+    var item_template = document.getElementById('itemTemplte').innerHTML
+    var renderFun = mito(item_template)
+    var html = renderFun({
+      items: items
+    })
+    document.getElementById('projectView').innerHTML = html;
 
-  var item_template = document.getElementById('itemTemplte').innerHTML
-  var renderFun = mito(item_template)
-  var html = renderFun({
-    items: items
-  })
-  document.getElementById('projectView').innerHTML = html;
+    $('.carousel').carousel({});
+  });
 });
-
-

@@ -1,0 +1,126 @@
+.carousel {
+  position: relative;
+
+  .carousel-inner {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+
+    > .item {
+      display: none;
+      position: relative;
+      text-align: center;
+      transition: .6s ease-in-out left;
+    }
+
+    > .active,
+    > .next,
+    > .prev {
+      display: block;
+    }
+
+    > .active {
+      left: 0;
+    }
+
+    > .next,
+    > .prev {
+      position: absolute;
+      top: 0;
+      width: 100%;
+    }
+
+    > .next {
+      left: 100%;
+    }
+    > .prev {
+      left: -100%;
+    }
+    > .next.left,
+    > .prev.right {
+      left: 0;
+    }
+
+    > .active.left {
+      left: -100%;
+    }
+    > .active.right {
+      left: 100%;
+    }
+  }
+}
+
+.carousel-indicators {
+  position: absolute;
+  left: 0;
+  bottom: 10px;
+  z-index: 15;
+
+  display: inline-block;
+  width: 100%;
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+  text-align: center;
+
+  li {
+    cursor: pointer;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 0 10px;
+    border-radius: 10px;
+    background-color: #dadada;
+  }
+  .active {
+    background-color: #3e9af1;
+  }
+}
+
+$carousel-control-font-size: 20px;
+
+// Scale up controls for tablets and up
+@media screen and (min-width: 768px) {
+
+  // Scale up the controls a smidge
+  .carousel-control {
+    .glyphicon-chevron-left,
+    .glyphicon-chevron-right,
+    .icon-prev,
+    .icon-next {
+      width: ($carousel-control-font-size * 1.5);
+      height: ($carousel-control-font-size * 1.5);
+      margin-top: ($carousel-control-font-size / -2);
+      font-size: ($carousel-control-font-size * 1.5);
+    }
+    .glyphicon-chevron-left,
+    .icon-prev {
+      margin-left: ($carousel-control-font-size / -2);
+    }
+    .glyphicon-chevron-right,
+    .icon-next {
+      margin-right: ($carousel-control-font-size / -2);
+    }
+  }
+
+  // Show and left align the captions
+  .carousel-caption {
+    left: 20%;
+    right: 20%;
+    padding-bottom: 30px;
+  }
+
+}
+
+@media (max-width: 768px) {
+  // Move up the indicators
+  .carousel-indicators {
+    li {
+      width: 9px;
+      height: 9px;
+      margin: 0 5px;
+    }
+  }
+}
+
+

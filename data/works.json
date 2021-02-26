@@ -5,8 +5,12 @@
     "title": "Longhash官网",
     "intro": "LongHash是一个加速开发和理解区块链技术的平台。",
     "description": "NodeJS + Vue.js + D3.js",
+    "tags": "NodeJS,Vue.js,D3.js",
     "link": "https://www.longhash.com",
-    "thumbnail": "./img/pro/longhash_2018.4.1.jpg"
+    "thumbnails": [
+      "./img/pro/longhash_2.png",
+      "./img/pro/longhash_2018.4.1.jpg"
+    ]
   },
   {
     "client": "porsche",
@@ -15,7 +19,9 @@
     "intro": "关于保时捷不同型号车的展示和介绍，在ios app store商店搜索查看",
     "description": "webpack项目管理 + vue + es6 + Hbuilder打包",
     "link": "https://itunes.apple.com/us/app/%E4%BF%9D%E6%97%B6%E6%8D%B7%E4%BA%A7%E5%93%81%E7%B2%BE%E5%8D%8E/id1242751142?l=zh&ls=1&mt=8",
-    "thumbnail": "./img/pro/porsche_2017.2.4.jpg"
+    "thumbnails": [
+      "./img/pro/porsche_2017.2.4.jpg"
+    ]
   },
   {
     "client": "VIPKID",
@@ -23,45 +29,31 @@
     "title": "V基地",
     "description": "webpack + WebGL + Phaser + TypeScript",
     "link": "https://lc.vipkid.com.cn/microgames/reading-encourage-01/index.html?external=1",
-    "thumbnail": "./img/pro/vipkid_vbase.jpg"
+    "thumbnails": [
+      "./img/pro/vipkid_vbase.jpg"
+    ]
   },
   {
     "client": "180",
     "date": "2018.04.01",
-    "title": "老虎机摇奖",
+    "title": "老虎机摇奖/抽奖大转盘/砸蛋抽大奖/扯红包",
     "description": "canvas + egret + TypeScript",
     "link": "http://h5n.180china.com/game/game1/index.html",
-    "thumbnail": "./img/pro/180_2018.4.1.jpg"
-  },
-  {
-    "client": "180",
-    "date": "2018.04.02",
-    "title": "抽奖大转盘",
-    "description": "canvas + egret + TypeScript",
-    "link": "http://h5n.180china.com/game/game2/index.html",
-    "thumbnail": "./img/pro/180_2018.4.2.jpg"
-  },
-  {
-    "client": "180",
-    "date": "2018.04.03",
-    "title": "砸蛋抽大奖",
-    "description": "canvas + egret + TypeScript",
-    "link": "http://h5n.180china.com/game/game3/index.html",
-    "thumbnail": "./img/pro/180_2018.4.3.jpg"
-  },
-  {
-    "client": "180",
-    "date": "2018.4.4",
-    "title": "扯红包",
-    "description": "canvas + egret + TypeScript",
-    "thumbnail": "./img/pro/180_2018.4.4.jpg"
+    "thumbnails": [
+      "./img/pro/180_2018.4.1.jpg",
+      "./img/pro/180_2018.4.2.jpg",
+      "./img/pro/180_2018.4.3.jpg",
+      "./img/pro/180_2018.4.4.jpg"
+    ]
   },
   {
     "client": "劳斯莱斯",
     "date": "2017.2.3",
     "title": "持恒为之完美",
     "description": "canvas + egret",
-    "thumbnail": "./img/pro/RR_2017.2.3.jpg"
+    "thumbnails": [
+      "./img/pro/RR_2017.2.3.jpg"
+    ]
   },
   {
     "client": "滴滴",
@@ -69,34 +61,28 @@
     "title": "长图",
     "description": "canvas + pixi.js",
     "link": "http://static.udache.com/gulfstream/webapp/modules/guinness/index.html",
-    "thumbnail": "./img/pro/didi_2017.10.1.jpg"
+    "thumbnails": [
+      "./img/pro/didi_2017.10.1.jpg"
+    ]
   },
   {
     "client": "demo",
     "date": "2016.1.1",
     "title": "《3D地球城市查看》",
     "description": "canvas + three.js",
-    "thumbnail": "./img/pro/demo_2016.1.1.jpg"
+    "thumbnails": [
+      "./img/pro/demo_2016.1.1.jpg"
+    ]
   },
   {
     "client": "英特尔",
     "date": "2016.8.11",
-    "title": "开脑站1",
+    "title": "开脑站1/开脑站2/开脑站3",
     "description": "gulp + canvas + pixi.js",
-    "thumbnail": "./img/pro/intelA_2016.8.11.jpg"
-  },
-  {
-    "client": "英特尔",
-    "date": "2016.8.11",
-    "title": "开脑站2",
-    "description": "gulp + canvas + pixi.js",
-    "thumbnail": "./img/pro/intelB_2016.8.11.jpg"
-  },
-  {
-    "client": "英特尔",
-    "date": "2016.8.11",
-    "title": "开脑站3",
-    "description": "gulp + canvas + pixi.js",
-    "thumbnail": "./img/pro/intelC_2016.8.11.jpg"
+    "thumbnails": [
+      "./img/pro/intelA_2016.8.11.jpg",
+      "./img/pro/intelB_2016.8.11.jpg",
+      "./img/pro/intelC_2016.8.11.jpg"
+    ]
   }
 ]
