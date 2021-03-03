@@ -9,20 +9,21 @@
   </head>
   <body>
     <div class="app">
-      <div class="root">
-        <header>
-          <span>W</span><span>e</span><span>l</span><span>c</span><span>o</span><span>m</span><span>e</span>
-          <span>t</span><span>o</span>
-          <span>m</span><span>y</span>
-          <span>bg</span><span>l</span><span>o</span><span>g</span>
-        </header>
-        <main>
-          <ul class="blog-list" id="projectView"></ul>
-        </main>
-        <footer>
-          没有更多了 (◐‿◑)﻿
-        </footer>
-      </div>
+
+      <header>
+        <span>W</span><span>e</span><span>l</span><span>c</span><span>o</span><span>m</span><span>e</span>
+        <span>t</span><span>o</span>
+        <span>m</span><span>y</span>
+        <span>bg</span><span>l</span><span>o</span><span>g</span>
+      </header>
+
+      <main>
+        <ul class="blog-list" id="projectView"></ul>
+      </main>
+
+      <footer>
+        没有更多了 (◐‿◑)﻿
+      </footer>
 
 
       <!--<canvas id="webgl"></canvas>-->
@@ -71,14 +72,17 @@
           <div class="item-down">
             <h2 class="title"><%= item.title %></h2>
 
-            <% if(item.intro && item.intro!==''){%>
-            <div class="intro"><%= item.intro %></div>
-            <% } %>
+            <div>
+              <span class="date"><%= item.date %></span>
 
-            <div class="description"><%= item.description %></div>
-            <p class="date">
-              <span><%= item.date %></span> | <span><%= item.client%></span>
-            </p>
+              <% if(item.tags){%>
+              <% item.tags.forEach((tag,idx)=>{ %>
+              <spam class="tag"><%= tag %></spam>
+              <% })%>
+              <% } %>
+            </div>
+
+            <div class="intro"><%= item.intro %></div>
           </div>
 
         </div>

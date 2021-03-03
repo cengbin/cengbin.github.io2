@@ -77,28 +77,27 @@ a {
       left: -100%; }
     .carousel .carousel-inner > .active.right {
       left: 100%; }
-
-.carousel-indicators {
-  position: absolute;
-  left: 0;
-  bottom: 10px;
-  z-index: 15;
-  display: inline-block;
-  width: 100%;
-  margin: 0;
-  padding-left: 0;
-  list-style: none;
-  text-align: center; }
-  .carousel-indicators li {
-    cursor: pointer;
+  .carousel .carousel-indicators {
+    position: absolute;
+    left: 0;
+    bottom: 10px;
+    z-index: 15;
     display: inline-block;
-    width: 10px;
-    height: 10px;
-    margin: 0 10px;
-    border-radius: 10px;
-    background-color: #dadada; }
-  .carousel-indicators .active {
-    background-color: #3e9af1; }
+    width: 100%;
+    margin: 0;
+    padding-left: 0;
+    list-style: none;
+    text-align: center; }
+    .carousel .carousel-indicators li {
+      cursor: pointer;
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      margin: 0 10px;
+      border-radius: 10px;
+      background-color: #dadada; }
+    .carousel .carousel-indicators .active {
+      background-color: #3e9af1; }
 
 @media screen and (min-width: 768px) {
   .carousel-control .glyphicon-chevron-left,
@@ -125,130 +124,144 @@ a {
     width: 9px;
     height: 9px;
     margin: 0 5px; } }
-.app .root {
-  max-width: 900px;
-  margin: 0 auto;
-  border-left: 1px solid #e7eaec;
-  border-right: 1px solid #e7eaec;
-  min-height: 100vh; }
-.app header {
-  position: relative;
-  z-index: 1;
-  color: black;
-  text-align: center;
-  line-height: 3em;
-  font-size: 30px;
-  font-family: 'satisfy';
-  color: white;
-  letter-spacing: 3px;
-  background-image: linear-gradient(0deg, #fff, #7af); }
-  .app header span {
-    display: inline-block;
-    animation: mytitle 3s ease-in-out infinite normal; }
-  .app header span:nth-child(1) {
-    animation-delay: 0.1s; }
-  .app header span:nth-child(2) {
-    animation-delay: 0.2s; }
-  .app header span:nth-child(3) {
-    animation-delay: 0.3s; }
-  .app header span:nth-child(4) {
-    animation-delay: 0.4s; }
-  .app header span:nth-child(5) {
-    animation-delay: 0.5s; }
-  .app header span:nth-child(6) {
-    animation-delay: 0.6s; }
-  .app header span:nth-child(7) {
-    animation-delay: 0.7s; }
-  .app header span:nth-child(8) {
-    animation-delay: 0.8s; }
-  .app header span:nth-child(9) {
-    animation-delay: 0.9s; }
-  .app header span:nth-child(10) {
-    animation-delay: 1s; }
-  .app header span:nth-child(11) {
-    animation-delay: 1.1s; }
-  .app header span:nth-child(12) {
-    animation-delay: 1.2s; }
-  .app header span:nth-child(13) {
-    animation-delay: 1.3s; }
-  .app header span:nth-child(14) {
-    animation-delay: 1.4s; }
-  .app header span:nth-child(15) {
-    animation-delay: 1.5s; }
-  .app header span:nth-child(16) {
-    animation-delay: 1.6s; }
-  .app header span:nth-child(17) {
-    animation-delay: 1.7s; }
-  .app header span:nth-child(18) {
-    animation-delay: 1.8s; }
-  .app header span:nth-child(19) {
-    animation-delay: 1.9s; }
-  .app header span:nth-child(20) {
-    animation-delay: 2s; }
-.app main {
-  position: relative;
-  z-index: 1; }
-  .app main ul.blog-list {
-    background-color: #f5f5f5; }
-    .app main ul.blog-list li.blog-list-item {
-      display: block;
-      margin-top: 16px;
-      margin-bottom: 16px;
-      border-top: 1px solid #e7eaec;
-      border-bottom: 1px solid #e7eaec; }
-      .app main ul.blog-list li.blog-list-item .item-view {
-        display: block; }
-        .app main ul.blog-list li.blog-list-item .item-view .item-up {
-          cursor: url("../img/cursor_hand.png"), auto !important;
-          position: relative;
-          width: 100%;
-          height: auto;
-          overflow: hidden;
-          background-color: white; }
-          .app main ul.blog-list li.blog-list-item .item-view .item-up:hover .thumbnail img {
-            transform: scale(1.02, 1.02);
-            -webkit-transform: scale(1.02, 1.02); }
-          .app main ul.blog-list li.blog-list-item .item-view .item-up .thumbnail {
-            max-height: 500px;
-            text-align: center; }
-            .app main ul.blog-list li.blog-list-item .item-view .item-up .thumbnail img {
-              width: auto;
-              height: 100%;
+.app {
+  position: relative; }
+  .app header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    line-height: 3em;
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    font-family: 'satisfy';
+    letter-spacing: 3px;
+    background-image: linear-gradient(0deg, rgba(255, 255, 255, 0.5), #7af); }
+    .app header span {
+      display: inline-block;
+      animation: mytitle 3s ease-in-out infinite normal; }
+    .app header span:nth-child(1) {
+      animation-delay: 0.1s; }
+    .app header span:nth-child(2) {
+      animation-delay: 0.2s; }
+    .app header span:nth-child(3) {
+      animation-delay: 0.3s; }
+    .app header span:nth-child(4) {
+      animation-delay: 0.4s; }
+    .app header span:nth-child(5) {
+      animation-delay: 0.5s; }
+    .app header span:nth-child(6) {
+      animation-delay: 0.6s; }
+    .app header span:nth-child(7) {
+      animation-delay: 0.7s; }
+    .app header span:nth-child(8) {
+      animation-delay: 0.8s; }
+    .app header span:nth-child(9) {
+      animation-delay: 0.9s; }
+    .app header span:nth-child(10) {
+      animation-delay: 1s; }
+    .app header span:nth-child(11) {
+      animation-delay: 1.1s; }
+    .app header span:nth-child(12) {
+      animation-delay: 1.2s; }
+    .app header span:nth-child(13) {
+      animation-delay: 1.3s; }
+    .app header span:nth-child(14) {
+      animation-delay: 1.4s; }
+    .app header span:nth-child(15) {
+      animation-delay: 1.5s; }
+    .app header span:nth-child(16) {
+      animation-delay: 1.6s; }
+    .app header span:nth-child(17) {
+      animation-delay: 1.7s; }
+    .app header span:nth-child(18) {
+      animation-delay: 1.8s; }
+    .app header span:nth-child(19) {
+      animation-delay: 1.9s; }
+    .app header span:nth-child(20) {
+      animation-delay: 2s; }
+  .app nav {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 200px;
+    height: 100%;
+    padding-top: 100px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12); }
+    .app nav ul li {
+      line-height: 50px;
+      padding: 4px 0 4px 20px;
+      font-size: 20px;
+      transition: background ease-in-out 0.3s; }
+      .app nav ul li:hover {
+        background: #e8e7e3; }
+  .app main {
+    position: relative;
+    z-index: 0;
+    min-height: 100vh; }
+    .app main ul.blog-list {
+      max-width: 900px;
+      margin: 0 auto;
+      padding-top: 90px;
+      padding-bottom: 32px;
+      border-left: 1px solid #e7eaec;
+      border-right: 1px solid #e7eaec;
+      background-color: #f5f5f5; }
+      .app main ul.blog-list li.blog-list-item {
+        display: block;
+        margin-bottom: 32px;
+        border-top: 1px solid #e7eaec;
+        border-bottom: 1px solid #e7eaec; }
+        .app main ul.blog-list li.blog-list-item:first-child {
+          border-top: 0; }
+        .app main ul.blog-list li.blog-list-item .item-view {
+          display: block; }
+          .app main ul.blog-list li.blog-list-item .item-view .item-up {
+            cursor: url("../img/cursor_hand.png"), auto !important;
+            position: relative;
+            width: 100%;
+            height: auto;
+            overflow: hidden;
+            background-color: white;
+            box-shadow: 0 2px 10px -2px rgba(0, 0, 0, 0.1); }
+            .app main ul.blog-list li.blog-list-item .item-view .item-up .thumbnail {
               max-height: 500px;
-              transition: transform 0.6s ease-out;
-              transform-origin: center center; }
-        .app main ul.blog-list li.blog-list-item .item-view .item-down {
-          background-color: white;
-          padding: 10px;
-          font-family: Avenir-Light, PingFangSC-Light, Arial, Microsoft YaHei Light, 微软雅黑, sans-serif; }
-          .app main ul.blog-list li.blog-list-item .item-view .item-down .title {
-            padding: 10px 0 0;
-            font-size: 22px;
-            line-height: 1.2;
-            color: #333; }
-          .app main ul.blog-list li.blog-list-item .item-view .item-down .intro {
-            font-size: 16px;
-            color: #444; }
-          .app main ul.blog-list li.blog-list-item .item-view .item-down .description {
-            font-size: 12px;
-            line-height: 1.5;
-            color: #676767;
-            margin-top: 10px;
-            text-shadow: 0 0 10px rgba(255, 0, 0, 0.35);
-            word-wrap: break-word;
-            word-break: break-all; }
-          .app main ul.blog-list li.blog-list-item .item-view .item-down .date {
-            text-align: right;
-            margin: 10px 6px 0;
-            font-size: 12px;
-            line-height: 25px;
-            color: #333; }
-.app footer {
-  position: relative;
-  z-index: 3;
-  color: white;
-  text-align: center;
-  line-height: 3em; }
+              text-align: center; }
+              .app main ul.blog-list li.blog-list-item .item-view .item-up .thumbnail img {
+                width: auto;
+                height: 100%;
+                max-height: 500px; }
+          .app main ul.blog-list li.blog-list-item .item-view .item-down {
+            background-color: white;
+            padding: 10px;
+            font-family: Avenir-Light, PingFangSC-Light, Arial, Microsoft YaHei Light, 微软雅黑, sans-serif; }
+            .app main ul.blog-list li.blog-list-item .item-view .item-down .title {
+              padding: 10px 0 0;
+              font-size: 22px;
+              line-height: 1.2;
+              color: #333; }
+            .app main ul.blog-list li.blog-list-item .item-view .item-down .date {
+              font-size: 14px;
+              color: #444; }
+            .app main ul.blog-list li.blog-list-item .item-view .item-down .tag {
+              font-size: 14px;
+              color: #444;
+              text-shadow: 0 0 10px rgba(255, 0, 0, 0.35); }
+            .app main ul.blog-list li.blog-list-item .item-view .item-down .intro {
+              font-size: 16px;
+              color: #676767;
+              margin-top: 10px; }
+  .app footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+    line-height: 3em;
+    color: #666666;
+    text-align: center; }
 
 @keyframes mytitle {
   0% {

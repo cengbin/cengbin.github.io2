@@ -4,8 +4,11 @@
     "date": "2018.04.01",
     "title": "Longhash官网",
     "intro": "LongHash是一个加速开发和理解区块链技术的平台。",
-    "description": "NodeJS + Vue.js + D3.js",
-    "tags": "NodeJS,Vue.js,D3.js",
+    "tags": [
+      "NodeJS",
+      "Vue.js",
+      "D3.js"
+    ],
     "link": "https://www.longhash.com",
     "thumbnails": [
       "./img/pro/longhash_2.png",
@@ -17,7 +20,11 @@
     "date": "2017.02.4",
     "title": "保时捷产品精华",
     "intro": "关于保时捷不同型号车的展示和介绍，在ios app store商店搜索查看",
-    "description": "webpack项目管理 + vue + es6 + Hbuilder打包",
+    "tags": [
+      "webpack",
+      "vue",
+      "Hbuilder"
+    ],
     "link": "https://itunes.apple.com/us/app/%E4%BF%9D%E6%97%B6%E6%8D%B7%E4%BA%A7%E5%93%81%E7%B2%BE%E5%8D%8E/id1242751142?l=zh&ls=1&mt=8",
     "thumbnails": [
       "./img/pro/porsche_2017.2.4.jpg"
@@ -26,31 +33,45 @@
   {
     "client": "VIPKID",
     "date": "2019.07.01",
-    "title": "V基地",
-    "description": "webpack + WebGL + Phaser + TypeScript",
+    "title": "VIPKID学习中心 - V基地",
+    "tags": [
+      "webpack",
+      "WebGL",
+      "Phaser",
+      "TypeScript"
+    ],
     "link": "https://lc.vipkid.com.cn/microgames/reading-encourage-01/index.html?external=1",
     "thumbnails": [
       "./img/pro/vipkid_vbase.jpg"
-    ]
+    ],
+    "intro": "激励游戏"
   },
   {
     "client": "180",
     "date": "2018.04.01",
-    "title": "老虎机摇奖/抽奖大转盘/砸蛋抽大奖/扯红包",
-    "description": "canvas + egret + TypeScript",
+    "title": "180广告-游戏系列",
+    "tags": [
+      "canvas",
+      "egret",
+      "TypeScript"
+    ],
     "link": "http://h5n.180china.com/game/game1/index.html",
     "thumbnails": [
       "./img/pro/180_2018.4.1.jpg",
       "./img/pro/180_2018.4.2.jpg",
       "./img/pro/180_2018.4.3.jpg",
       "./img/pro/180_2018.4.4.jpg"
-    ]
+    ],
+    "intro": "老虎机摇奖/抽奖大转盘/砸蛋抽大奖/扯红包"
   },
   {
-    "client": "劳斯莱斯",
+    "client": "劳斯莱斯-h5",
     "date": "2017.2.3",
     "title": "持恒为之完美",
-    "description": "canvas + egret",
+    "tags": [
+      "canvas",
+      "egret"
+    ],
     "thumbnails": [
       "./img/pro/RR_2017.2.3.jpg"
     ]
@@ -59,7 +80,7 @@
     "client": "滴滴",
     "date": "2015.10.1",
     "title": "长图",
-    "description": "canvas + pixi.js",
+    "intro": "canvas + pixi.js",
     "link": "http://static.udache.com/gulfstream/webapp/modules/guinness/index.html",
     "thumbnails": [
       "./img/pro/didi_2017.10.1.jpg"
@@ -69,7 +90,7 @@
     "client": "demo",
     "date": "2016.1.1",
     "title": "《3D地球城市查看》",
-    "description": "canvas + three.js",
+    "intro": "canvas + three.js",
     "thumbnails": [
       "./img/pro/demo_2016.1.1.jpg"
     ]
@@ -77,8 +98,13 @@
   {
     "client": "英特尔",
     "date": "2016.8.11",
-    "title": "开脑站1/开脑站2/开脑站3",
-    "description": "gulp + canvas + pixi.js",
+    "title": "英特尔 - 游戏系列",
+    "intro": "开脑站1/开脑站2/开脑站3",
+    "tags": [
+      "gulp",
+      "canvas",
+      "pixi.js"
+    ],
     "thumbnails": [
       "./img/pro/intelA_2016.8.11.jpg",
       "./img/pro/intelB_2016.8.11.jpg",
