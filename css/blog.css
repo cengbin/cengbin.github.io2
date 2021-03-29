@@ -275,20 +275,13 @@ a {
   font-style: normal;
   font-weight: 400;
   src: local("satisfy"), local("satisfy"), url("../font/satisfy.woff") format("woff"); }
-@media (max-width: 768px) {
-  .home-page header {
-    font-size: 20px; }
-  .home-page main {
-    padding: 0 2%; }
-    .home-page main .show-case li {
-      padding: 0 2%; }
-      .home-page main .show-case li .item-down .title {
-        font-size: 16px; }
-      .home-page main .show-case li .item-down .intro {
-        font-size: 14px; }
-      .home-page main .show-case li .item-down .description {
-        font-size: 12px; }
-      .home-page main .show-case li .item-down .date {
-        font-size: 10px; } }
+@media (max-width: 900px) {
+  .app main ul.blog-list li.blog-list-item .item-view .item-up .thumbnail {
+    max-height: inherit;
+    text-align: center; }
+    .app main ul.blog-list li.blog-list-item .item-view .item-up .thumbnail img {
+      width: 100%;
+      height: auto;
+      max-height: inherit; } }
 
 /*# sourceMappingURL=blog.css.map */

@@ -47,11 +47,11 @@
                   <% item.thumbnails.forEach((thumbnail,idx)=>{ %>
                   <% if(idx===0){%>
                   <div class="item active">
-                    <img class="item-img" src="<%= thumbnail %>">
+                    <img class="item-img" src="./img/default.jpg" data-src="<%= thumbnail %>">
                   </div>
                   <% }else{ %>
                   <div class="item">
-                    <img class="item-img" src="<%= thumbnail %>">
+                    <img class="item-img" src="./img/default.jpg" data-src="<%= thumbnail %>">
                   </div>
                   <% } %>
                   <% })%>

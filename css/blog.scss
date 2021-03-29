@@ -173,30 +173,26 @@
   src: local('satisfy'), local('satisfy'), url('../font/satisfy.woff') format('woff');
 }
 
-@media (max-width: 768px) {
-  .home-page {
-    header {
-      font-size: 20px;
-    }
-
+@media (max-width: 900px) {
+  .app {
     main {
-      padding: 0 2%;
+      ul.blog-list {
 
-      .show-case {
-        li {
-          padding: 0 2%;
-          .item-down {
-            .title {
-              font-size: 16px;
-            }
-            .intro {
-              font-size: 14px;
-            }
-            .description {
-              font-size: 12px;
-            }
-            .date {
-              font-size: 10px;
+        li.blog-list-item {
+
+          .item-view {
+
+            .item-up {
+
+              .thumbnail {
+                max-height: inherit;
+                text-align: center;
+                img {
+                  width: 100%;
+                  height: auto;
+                  max-height: inherit;
+                }
+              }
             }
           }
         }
