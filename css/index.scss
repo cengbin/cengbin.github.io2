@@ -162,9 +162,13 @@ body {
 
           margin: 13px 0;
         }
+
+        ul{
+          color:white;
+        }
       }
 
-      ul {
+      ul.menu {
         list-style-type: none;
         display: inline-block;
         margin: 0;

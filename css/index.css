@@ -265,26 +265,28 @@ body {
       font-size: 0.8rem;
       font-weight: lighter;
       margin: 13px 0; }
-    .index .page2 .page-inner ul {
+    .index .page2 .page-inner header ul {
+      color: white; }
+    .index .page2 .page-inner ul.menu {
       list-style-type: none;
       display: inline-block;
       margin: 0;
       padding: 40px 0;
       border-top: 1px solid rgba(255, 255, 255, 0.1);
       border-bottom: 1px solid rgba(255, 255, 255, 0.1); }
-      .index .page2 .page-inner ul li {
+      .index .page2 .page-inner ul.menu li {
         display: inline-block;
         padding: 0 30px;
         border-left: solid 0.1px rgba(255, 255, 255, 0.1);
         transition: all 0.2s; }
-        .index .page2 .page-inner ul li:last-child {
+        .index .page2 .page-inner ul.menu li:last-child {
           border-right: solid 0.1px rgba(255, 255, 255, 0.1); }
-        .index .page2 .page-inner ul li:hover {
+        .index .page2 .page-inner ul.menu li:hover {
           transform: translateY(-2px); }
-          .index .page2 .page-inner ul li:hover a {
+          .index .page2 .page-inner ul.menu li:hover a {
             color: #f6f6f6;
             text-shadow: 0 0 2px #f6f6f6; }
-        .index .page2 .page-inner ul li a {
+        .index .page2 .page-inner ul.menu li a {
           color: #b6b6b6;
           transition: all 0.2s; }
 
