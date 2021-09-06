@@ -8,53 +8,51 @@
   </head>
   <body>
     <canvas id="background"></canvas>
-    <div class="index">
-      <section class="page page1">
-        <div class="page-inner">
-          <h2 class="title">Hello Welcome</h2>
-          <!--<h3 class="subtitle" original-content="A man who loves life">
-            <span>A</span>
-            <span> </span>
-            <span>m</span><span>a</span><span>n</span>
-            <span>w</span><span>h</span><span>o</span>
-            <span> </span>
-            <span>l</span><span>o</span><span>v</span><span>e</span><span>s</span>
-            <span> </span>
-            <span>l</span><span>i</span><span>f</span><span>e</span>
-          </h3>-->
-          <h3 style="color:white;">勤学如春起之苗不见其增日有所长</h3>
+    <div class="main">
+      <div class="page-list">
+        <div class="page page1">
+          <div class="page-inner">
+            <h2 class="title">
+              <span>H</span><span>e</span><span>l</span><span>l</span><span>o</span>
+              <span>W</span><span>e</span><span>l</span><span>c</span><span>o</span><span>m</span><span>e</span>
+            </h2>
+            <h3 class="subtitle">勤学如春起之苗不见其增日有所长</h3>
+          </div>
         </div>
-      </section>
-      <section class="page page2">
-        <div class="page-inner">
-          <header>
-            <img src="./img/picture.jpg" width="100" height="100" alt="avatar">
-            <h1>A Bin</h1>
-            <h2 id="signature" data-translate="signature">编程语言：C/C++ &amp; HTML &amp; CSS &amp; JavaScript &amp; TypeScript & Java & T-SQL</h2>
-            <h2  data-translate="signature">技能：</h2>
-            <ul>
-              <li>前端：Vue,React,微前端。Egret，PIXI，Phaser</li>
-              <li>服务端：Servlet,JSP</li>
-              <li>数据库：SQL Server</li>
+        <div class="page page2">
+          <div class="page-inner">
+            <header>
+              <img src="./img/picture.jpg" width="100" height="100" alt="avatar">
+              <h1>A Bin</h1>
+              <h2 id="signature" data-translate="signature">掌握编程语言：HTML &amp; CSS &amp; JavaScript &amp; TypeScript</h2>
+              <h2 id="signature2" data-translate="signature">了解编程语言：C/C++ &amp; Java & T-SQL</h2>
+              <h2 data-translate="signature">Skills：</h2>
+              <ul>
+                <li>Frontend：Vue,React,Micro Frontend,Egret,PIXI,Phaser</li>
+                <li>Backend：Servlet,JSP,NodeJS</li>
+                <li>Database：SQL Server</li>
+              </ul>
+            </header>
+            <ul class="menu">
+              <li>
+                <a href="./blog.html">
+                  <i class="icon icon-bokeyuan"></i>
+                  <span>Blog</span>
+                </a>
+              </li>
+              <li>
+                <a href="./about.html">
+                  <i class="icon icon-xiaolian"></i>
+                  <span>About</span>
+                </a>
+              </li>
             </ul>
-          </header>
-          <ul class="menu">
-            <li>
-              <a href="./blog.html">
-                <i class="icon icon-bokeyuan"></i>
-                <span>Blog</span>
-              </a>
-            </li>
-            <li>
-              <a href="./about.html">
-                <i class="icon icon-xiaolian"></i>
-                <span>About</span>
-              </a>
-            </li>
-          </ul>
+          </div>
         </div>
-      </section>
+      </div>
     </div>
+    <!--<script src="./lib/jquery/jquery-1.7.2.min.js"></script>-->
+    <script src="./lib/jquery/jquery-1.11.2.min.js"></script>
     <script>
       window.config = {
         SIM_RESOLUTION: 128,
@@ -85,5 +83,15 @@
       }
     </script>
     <script src="./js/background.js"></script>
+    <script>
+      $(function () {
+        $("html,body").scrollTop(0);
+
+        $(".page1").css({opacity: 0}).delay(1000).animate({opacity: 1}, 1000);
+        $(".page1 .title").delay(1000).fadeIn(0);
+
+        $(".main").delay(4000).animate({scrollTop: window.innerHeight}, 1000);
+      })
+    </script>
   </body>
 </html>
