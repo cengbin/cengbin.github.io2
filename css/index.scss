@@ -90,7 +90,6 @@ html {
     //animation-fill-mode: forwards;
 
     .page-inner {
-
       text-align: center;
       header {
         img {
@@ -111,14 +110,19 @@ html {
         h2 {
           color: #ccc;
           letter-spacing: 3px;
-          font-size: 0.8rem;
           font-weight: lighter;
-
-          margin: 13px 0;
+          text-align: left;
+          line-height: 1.5;
+          font-size: 14px;
         }
 
         ul {
           color: white;
+          text-align: left;
+
+          li {
+            margin-left: 16px;
+          }
         }
       }
 
@@ -158,6 +162,3 @@ html {
     }
   }
 }
-
-
-
